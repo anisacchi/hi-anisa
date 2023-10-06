@@ -25,7 +25,7 @@ const projects = [
     link_demo: 'https://hi-anisa.netlify.app',
     link_notion: 'https://www.notion.so/anisacchi/Hi-Anisa-Portfolio-Website-2aaac78155a94ce2bb7cf90726339c61?pvs=4',
     link_figma: 'https://www.figma.com/file/sRCpaiPTOwpPzz4kAf9Pgr/hi-anisa-(portfolio-website)?type=design&node-id=0%3A1&mode=design&t=19CtYV5j9uhuBH1J-1',
-    link_github: '',
+    link_github: 'https://github.com/anisacchi/hi-anisa',
   },
 ];
 
