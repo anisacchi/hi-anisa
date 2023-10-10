@@ -4,7 +4,7 @@ import React, { useContext, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Logo } from '../components';
+import { Button, Logo } from '../components';
 import {
   HouseFill,
   HouseRegular,
@@ -35,127 +35,151 @@ const Navbar = () => {
   return (
     <>
       <header className='relative w-full lg:shadow-none shadow-shadow-neutral padding-x py-4 flex justify-between items-center'>
-        <div className='w-12 h-12'>
-          <button
-            className={`absolute z-30 w-12 h-12 flex flex-col justify-center items-center rounded-full cursor-pointer ${
-              isMenuOpen
-                ? 'bg-primary-300'
-                : 'bg-neutral-100 border dark:bg-neutral-600 border-primary-300'
-            }`}
+        <div className='relative w-12 h-12'>
+          <Button
+            type='secondary'
+            icon='only'
+            radius='full'
+            className='absolute z-50 top-[1px]'
             onClick={menuOpenHandler}
           >
-            <span
-              className={`block h-0.5 w-6 my-0.5 rounded-full transition-all duration-300 ease-out 
-						${
-              isMenuOpen
-                ? 'rotate-45 translate-y-0.5 bg-neutral-100'
-                : '-translate-y-0.5 bg-primary-300'
-            }`}
-            />
-            <span
-              className={`block h-0.5 w-6 my-0.5 rounded-full transition-all duration-300 ease-out ${
-                isMenuOpen
-                  ? '-rotate-45 -translate-y-1 bg-neutral-100'
-                  : 'translate-y-0.5 bg-primary-300'
-              }`}
-            />
-          </button>
-          <nav className='absolute z-20 w-12 top-20 flex flex-col gap-2 justify-center items-center'>
+            <div>
+              <span
+                className={`block h-0.5 lg:w-4 w-5 my-0.5 rounded-full transition-all duration-300 ease-out bg-primary-700 dark:bg-primary-400 group-hover:bg-primary-800 group-hover:dark:bg-primary-300 ${
+                  isMenuOpen ? 'rotate-45 translate-y-0.5' : '-translate-y-0.5'
+                }`}
+              />
+              <span
+                className={`block h-0.5 lg:w-4 w-5 my-0.5 rounded-full transition-all duration-300 ease-out bg-primary-700 dark:bg-primary-400 group-hover:bg-primary-800 group-hover:dark:bg-primary-300 ${
+                  isMenuOpen
+                    ? '-rotate-45 -translate-y-0.5 '
+                    : 'translate-y-0.5'
+                }`}
+              />
+            </div>
+          </Button>
+          <nav className='absolute z-20 w-12 top-[60px] -left-[2.5px] flex flex-col gap-2 justify-center items-center'>
             <Link
               href='/'
               className={`w-10 h-10 flex justify-center items-center rounded-full transition-all duration-300 ease-out ${
                 path === '/'
-                  ? 'bg-primary-300'
-                  : 'bg-neutral-100 dark:bg-neutral-600 border border-primary-300 hover:bg-primary-100'
-              } ${isMenuOpen ? 'translate-y-0' : '-translate-y-[60px]'}`}
+                  ? 'bg-primary-700 dark:bg-primary-400'
+                  : 'bg-neutral-100 hover:bg-primary-100 dark:bg-neutral-800 hover:dark:bg-neutral-700 border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200'
+              } ${
+                isMenuOpen
+                  ? 'translate-y-0'
+                  : '-translate-y-[58px]'
+              }`}
               onClick={menuOpenHandler}
             >
               {path === '/' ? (
-                <HouseFill width={24} height={24} color='#FEFEFE' />
+                <HouseFill className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700' />
               ) : (
-                <HouseRegular width={24} height={24} color='#FFA7A6' />
+                <HouseRegular className='w-5 h-5 fill-primary-700 dark:fill-primary-400' />
               )}
             </Link>
             <Link
               href='/about'
               className={`w-10 h-10 flex justify-center items-center rounded-full transition-all duration-300 ease-out ${
                 path === '/about'
-                  ? 'bg-primary-300'
-                  : 'bg-neutral-100 dark:bg-neutral-600 border border-primary-300 hover:bg-primary-100'
-              } ${isMenuOpen ? 'translate-y-0' : '-translate-y-[108px]'}`}
+                  ? 'bg-primary-700 dark:bg-primary-400'
+                  : 'bg-neutral-100 hover:bg-primary-100 dark:bg-neutral-800 hover:dark:bg-neutral-700 border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200'
+              } ${
+                isMenuOpen
+                  ? 'translate-y-0'
+                  : '-translate-y-[104px]'
+              }`}
               onClick={menuOpenHandler}
             >
               {path === '/about' ? (
-                <UserFill width={24} height={24} color='#FEFEFE' />
+                <UserFill className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700' />
               ) : (
-                <UserRegular width={24} height={24} color='#FFA7A6' />
+                <UserRegular className='w-5 h-5 fill-primary-700 dark:fill-primary-400' />
               )}
             </Link>
             <Link
               href='/projects'
               className={`w-10 h-10 flex justify-center items-center rounded-full transition-all duration-300 ease-out ${
                 path === '/projects'
-                  ? 'bg-primary-300'
-                  : 'bg-neutral-100 dark:bg-neutral-600 border border-primary-300 hover:bg-primary-100'
-              } ${isMenuOpen ? 'translate-y-0' : '-translate-y-[156px]'}`}
+                  ? 'bg-primary-700 dark:bg-primary-400'
+                  : 'bg-neutral-100 hover:bg-primary-100 dark:bg-neutral-800 hover:dark:bg-neutral-700 border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200'
+              } ${
+                isMenuOpen
+                  ? 'translate-y-0'
+                  : '-translate-y-[152px]'
+              }`}
               onClick={menuOpenHandler}
             >
               {path === '/projects' ? (
-                <LaptopFill width={24} height={24} color='#FEFEFE' />
+                <LaptopFill className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700' />
               ) : (
-                <LaptopRegular width={24} height={24} color='#FFA7A6' />
+                <LaptopRegular className='w-5 h-5 fill-primary-700 dark:fill-primary-400' />
               )}
             </Link>
             <Link
               href='/contact'
               className={`w-10 h-10 flex justify-center items-center rounded-full transition-all duration-300 ease-out ${
                 path === '/contact'
-                  ? 'bg-primary-300'
-                  : 'bg-neutral-100 dark:bg-neutral-600 border border-primary-300 hover:bg-primary-100'
-              } ${isMenuOpen ? 'translate-y-0' : '-translate-y-[204px]'}`}
+                  ? 'bg-primary-700 dark:bg-primary-400'
+                  : 'bg-neutral-100 hover:bg-primary-100 dark:bg-neutral-800 hover:dark:bg-neutral-700 border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200'
+              } ${
+                isMenuOpen
+                  ? 'translate-y-0'
+                  : '-translate-y-[200px]'
+              }`}
               onClick={menuOpenHandler}
             >
               {path === '/contact' ? (
-                <LetterFill width={24} height={24} color='#FEFEFE' />
+                <LetterFill className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700' />
               ) : (
-                <LetterRegular width={24} height={24} color='#FFA7A6' />
+                <LetterRegular className='w-5 h-5 fill-primary-700 dark:fill-primary-400' />
               )}
             </Link>
           </nav>
         </div>
         <Logo isDarkTheme={themeContext.isDarkTheme} />
-        <button
+        <Button
+          type='secondary'
+          icon='only'
+					radius='full'
           onClick={toggleThemeHandler}
-          className='w-12 h-12 flex justify-center items-center rounded-full border border-primary-300'
         >
           {themeContext.isDarkTheme ? (
             <motion.div
               whileHover={{
-                rotate: [0, 45, 90, 135, 180],
+                rotate: 360,
                 transition: {
                   duration: 1.5,
                   repeat: Infinity,
-                  ease: 'easeInOut',
+                  ease: 'linear',
                 },
               }}
             >
-              <Sun width={24} height={24} color='#FFA7A6' />
+              <Sun
+                width={20}
+                height={20}
+                className='fill-primary-700 dark:fill-primary-400 group-hover:fill-primary-800 group-hover:dark:fill-primary-300'
+              />
             </motion.div>
           ) : (
             <motion.div
               whileHover={{
-                rotate: [0, 5, 10, 5, 0],
+                rotate: [0, 20, 0, -20, 0],
                 transition: {
-                  duration: 1.5,
+                  duration: 2,
                   repeat: Infinity,
-                  ease: 'easeInOut',
+                  ease: 'linear',
                 },
               }}
             >
-              <MoonStars width={24} height={24} color='#FFA7A6' />
+              <MoonStars
+                width={20}
+                height={20}
+                className='fill-primary-700 dark:fill-primary-400 group-hover:fill-primary-800 group-hover:dark:fill-primary-300 '
+              />
             </motion.div>
           )}
-        </button>
+        </Button>
       </header>
       <div
         className={`fixed z-10 h-screen w-screen bg-neutral-600/70 lg:hidden ${

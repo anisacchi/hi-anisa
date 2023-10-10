@@ -3,7 +3,11 @@ import { Footer, Navbar } from '@/components';
 import './globals.css';
 import { ThemeContextProvider } from '@/context/ThemeContext';
 
-const nunito = Nunito({ subsets: ['latin'] });
+const nunito = Nunito({
+  subsets: ['latin'],
+  display: 'fallback',
+  variable: '--font-nunito',
+});
 
 export const metadata = {
   title: 'Anisa | Portfolio',
@@ -16,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <ThemeContextProvider>
         <body
-          className={`${nunito.className} relative min-h-screen flex flex-col justify-between dark:bg-neutral-600 dark:text-neutral-100`}
+          className={`${nunito.variable} font-nunito relative min-h-screen flex flex-col justify-between dark:bg-neutral-800 dark:text-neutral-100`}
         >
           <Navbar />
           {children}

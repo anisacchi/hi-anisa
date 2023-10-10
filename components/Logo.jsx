@@ -26,7 +26,7 @@ const Logo = ({ isDarkTheme }) => {
             className='absolute -z-10 top-0 left-0'
           />
         )}
-        <span className='font-bold text-primary-300 dark:text-neutral-600'>A</span>
+        <span className='font-bold text-primary-500 dark:text-primary-100'>A</span>
       </Link>
     </div>
   );

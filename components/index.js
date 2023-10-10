@@ -10,6 +10,7 @@ import Experiences from './Experiences';
 import Certificates from './Certificates';
 import ButtonTop from './ButtonTop';
 import { WebsiteCard, DesignCard } from './ProjectCard';
+import Button from './Button/Button';
 
 export {
   Navbar,
@@ -25,4 +26,5 @@ export {
   ButtonTop,
   WebsiteCard,
   DesignCard,
+  Button,
 };

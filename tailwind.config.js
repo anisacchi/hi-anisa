@@ -8,31 +8,41 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    colors: {
+      primary: {
+        100: '#FFF3ED',
+        200: '#FFE4DB',
+        300: '#FFD3C9',
+        400: '#FFC2BC',
+        500: '#FFA7A6',
+        600: '#DB7980',
+        700: '#B75363',
+        800: '#93344C',
+        900: '#7A1F3D',
+      },
+      neutral: {
+        100: '#FDFDFD',
+        200: '#ECECEC',
+        300: '#A8A8A8',
+        400: '#808080',
+        500: '#676767',
+        600: '#414141',
+        700: '#3B3B3B',
+        800: '#2E2E2E',
+        900: '#242424',
+      },
+      success: '#ACE67E',
+      warning: '#F4EB45',
+      info: '#93BAFF',
+      danger: '#FFAEA5',
+    },
     extend: {
-      colors: {
-        primary: {
-          100: '#FFF3ED',
-          200: '#FFD3C9',
-          300: '#FFA7A6',
-          400: '#DB7980',
-          500: '#B75363',
-        },
-        neutral: {
-          100: '#FEFEFE',
-          200: '#CCCCCC',
-          300: '#9F9F9F',
-          400: '#707070',
-          500: '#414141',
-          600: '#121212',
-        },
-        state: {
-          success: '#57CC7C',
-          error: '#FF653F',
-        },
+      fontFamily: {
+        nunito: ['--var(--font-nunito)'],
       },
       boxShadow: {
-        'shadow-pink': '0px 8px 28px 0px rgba(255, 167, 166, 0.15)',
-        'shadow-neutral': '0px 8px 28px 0px rgba(159, 159, 159, 0.15)',
+        primary: '0px 8px 28px 0px rgba(183, 83, 99, 0.20)',
+        neutral: '0px 8px 28px 0px rgba(59, 59, 59, 0.20)',
       },
       animation: {
         wiggle: 'wiggle 3s infinite',
