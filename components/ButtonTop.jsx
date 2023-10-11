@@ -27,7 +27,11 @@ const ButtonTop = () => {
   }, []);
 
   return (
-    <Button type='secondary' icon='only' radius='full'
+    <Button
+      type='button'
+      intent='secondary'
+      icon='only'
+      radius='full'
       className={`${
         isVisible ? 'scale-100' : 'scale-0'
       } fixed z-50 bottom-4 right-4 transition-all ease-out duration-300`}
@@ -39,7 +43,11 @@ const ButtonTop = () => {
           transition: { duration: 1.5, repeat: Infinity, ease: 'easeInOut' },
         }}
       >
-        <ArrowUp width={20} height={20} className='m-4 fill-primary-700 dark:fill-primary-400' />
+        <ArrowUp
+          width={20}
+          height={20}
+          className='m-4 fill-primary-700 dark:fill-primary-400'
+        />
       </motion.div>
     </Button>
   );

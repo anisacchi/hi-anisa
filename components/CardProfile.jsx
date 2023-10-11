@@ -34,13 +34,13 @@ const CardProfile = () => {
             href='https://drive.google.com/file/d/1EFCp9Tw9p_pdQ-iBuy_cdD8RiT50hxNq/view?usp=sharing'
             target='_blank' className='w-full'
           >
-            <Button type='primary' icon='right' >
+            <Button type='button' intent='primary' icon='right' >
               <span>Resume</span>
               <Download className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700 translate-y-0 group-hover:-translate-y-1 duration-300 transition-all ease-in-out' />
             </Button>
           </Link>
           <Link href='/contact' className='w-full'>
-            <Button type='secondary' icon='none'>
+            <Button type='button' intent='secondary' icon='none'>
               <span>Contact</span>
             </Button>
           </Link>

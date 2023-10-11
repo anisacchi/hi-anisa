@@ -128,7 +128,7 @@ export default function Home() {
               </div>
             </div>
             <Link href='/about' className='w-full max-w-xs'>
-              <Button type='primary' icon='left' radius='normal'>
+              <Button type='button' intent='primary' icon='left' radius='normal'>
                 <span>Next</span>
                 <ArrowRight className='lg:w-4 w-5 lg:h-4 h-5 fill-neutral-100 dark:fill-neutral-700 translate-x-0 transition-all duration-300 ease-in-out group-hover:translate-x-1' />
               </Button>

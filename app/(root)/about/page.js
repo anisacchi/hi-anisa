@@ -30,8 +30,8 @@ export default function About() {
             </p>
             <div className='w-full flex flex-col gap-4'>
               <div className='border-l-2 border-primary-500 pl-4 mt-4'>
-                <span className='text-sm text-primary-600 dark:text-primary-300'>{`A few technologies I've been working with recently`}</span>
-                <h1 className='lg:text-4xl text-2xl font-bold tracking-wide'>
+                <span className='text-sm text-primary-600 dark:text-primary-200'>{`A few technologies I've been working with recently`}</span>
+                <h1 className='lg:text-4xl text-2xl font-bold tracking-wide text-primary-700 dark:text-primary-400'>
                   Skills
                 </h1>
               </div>
@@ -41,10 +41,10 @@ export default function About() {
         </div>
         <div className='w-full my-6 flex flex-col gap-8'>
           <div className='border-l-2 border-primary-500 pl-4 mt-4'>
-            <span className='text-sm text-primary-600 dark:text-primary-300'>
+            <span className='text-sm text-primary-600 dark:text-primary-200'>
               Where I studied and got my degree
             </span>
-            <h1 className='lg:text-4xl text-2xl font-bold tracking-wide'>
+            <h1 className='lg:text-4xl text-2xl font-bold tracking-wide text-primary-700 dark:text-primary-400'>
               Education
             </h1>
           </div>
@@ -52,10 +52,10 @@ export default function About() {
         </div>
         <div className='w-full my-6 flex flex-col gap-8'>
           <div className='border-l-2 border-primary-500 pl-4 mt-4'>
-            <span className='text-sm text-primary-600 dark:text-primary-300'>
+            <span className='text-sm text-primary-600 dark:text-primary-200'>
               What I have done so far
             </span>
-            <h1 className='lg:text-4xl text-2xl font-bold tracking-wide'>
+            <h1 className='lg:text-4xl text-2xl font-bold tracking-wide text-primary-700 dark:text-primary-400'>
               Experiences
             </h1>
           </div>
@@ -63,10 +63,10 @@ export default function About() {
         </div>
         <div className='w-full my-6 flex flex-col gap-8'>
           <div className='border-l-2 border-primary-500 pl-4 mt-4'>
-            <span className='text-sm text-primary-600 dark:text-primary-300'>
+            <span className='text-sm text-primary-600 dark:text-primary-200'>
               What I achieved so far
             </span>
-            <h1 className='lg:text-4xl text-2xl font-bold tracking-wide'>
+            <h1 className='lg:text-4xl text-2xl font-bold tracking-wide text-primary-700 dark:text-primary-400'>
               Certificates
             </h1>
           </div>

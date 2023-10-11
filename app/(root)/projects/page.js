@@ -42,7 +42,7 @@ export default function Projects() {
     <>
       <Transition />
       <section className='w-full flex flex-col justify-center items-center gap-4'>
-        <h1 className='lg:text-4xl text-2xl font-bold tracking-wide'>
+        <h1 className='lg:text-4xl text-2xl font-bold tracking-wide text-primary-700 dark:text-primary-400'>
           Projects
         </h1>
         <div className='flex gap-4'>
@@ -50,11 +50,11 @@ export default function Projects() {
             <button
               key={`category-${index}`}
               onClick={() => categorySelectHandler(category)}
-              className={`relative hover:text-primary-500 hover:dark:text-primary-300 ${
+              className={`relative hover:text-primary-600 hover:dark:text-primary-200 ${
                 categorySelected === category
-                  ? 'font-semibold text-primary-600 dark:text-primary-400 hover:text-primary-600 hover:dark:text-primary-400 after:scale-100'
+                  ? 'font-semibold text-primary-600 dark:text-primary-500 hover:text-primary-600 hover:dark:text-primary-500 after:scale-100'
                   : 'text-neutral-800 dark:text-neutral-100 after:scale-0'
-              } after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:rounded-lg after:bg-primary-600 after:dark:bg-primary-400 after:duration-300 after:ease-in-out`}
+              } after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:rounded-lg after:bg-primary-600 after:dark:bg-primary-500 after:duration-300 after:ease-in-out`}
             >
               {category}
             </button>
@@ -73,7 +73,8 @@ export default function Projects() {
         {/* Pagination */}
         <div className='mt-2 flex gap-2 justify-center items-center'>
           <Button
-            type={currentPage === 1 ? 'disabled' : 'secondary'}
+            type='button'
+            intent={currentPage === 1 ? 'disabled' : 'secondary'}
             icon='only'
             onClick={() => setCurrentPage(currentPage - 1)}
           >
@@ -88,7 +89,8 @@ export default function Projects() {
           {[...Array(totalPage).keys()].map((page) => (
             <Button
               key={page}
-              type={page + 1 === currentPage ? 'primary' : 'secondary'}
+              type='button'
+							intent={page + 1 === currentPage ? 'primary' : 'secondary'}
               icon='only'
               onClick={() => setCurrentPage(page + 1)}
             >
@@ -96,7 +98,8 @@ export default function Projects() {
             </Button>
           ))}
           <Button
-            type={currentPage === totalPage ? 'disabled' : 'secondary'}
+            type='button'
+						intent={currentPage === totalPage ? 'disabled' : 'secondary'}
             icon='only'
             onClick={() => setCurrentPage(currentPage + 1)}
           >

@@ -37,7 +37,8 @@ const Navbar = () => {
       <header className='relative w-full lg:shadow-none shadow-shadow-neutral padding-x py-4 flex justify-between items-center'>
         <div className='relative w-12 h-12'>
           <Button
-            type='secondary'
+            type='button'
+            intent='secondary'
             icon='only'
             radius='full'
             className='absolute z-50 top-[1px]'
@@ -65,11 +66,7 @@ const Navbar = () => {
                 path === '/'
                   ? 'bg-primary-700 dark:bg-primary-400'
                   : 'bg-neutral-100 hover:bg-primary-100 dark:bg-neutral-800 hover:dark:bg-neutral-700 border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200'
-              } ${
-                isMenuOpen
-                  ? 'translate-y-0'
-                  : '-translate-y-[58px]'
-              }`}
+              } ${isMenuOpen ? 'translate-y-0' : '-translate-y-[58px]'}`}
               onClick={menuOpenHandler}
             >
               {path === '/' ? (
@@ -84,11 +81,7 @@ const Navbar = () => {
                 path === '/about'
                   ? 'bg-primary-700 dark:bg-primary-400'
                   : 'bg-neutral-100 hover:bg-primary-100 dark:bg-neutral-800 hover:dark:bg-neutral-700 border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200'
-              } ${
-                isMenuOpen
-                  ? 'translate-y-0'
-                  : '-translate-y-[104px]'
-              }`}
+              } ${isMenuOpen ? 'translate-y-0' : '-translate-y-[104px]'}`}
               onClick={menuOpenHandler}
             >
               {path === '/about' ? (
@@ -103,11 +96,7 @@ const Navbar = () => {
                 path === '/projects'
                   ? 'bg-primary-700 dark:bg-primary-400'
                   : 'bg-neutral-100 hover:bg-primary-100 dark:bg-neutral-800 hover:dark:bg-neutral-700 border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200'
-              } ${
-                isMenuOpen
-                  ? 'translate-y-0'
-                  : '-translate-y-[152px]'
-              }`}
+              } ${isMenuOpen ? 'translate-y-0' : '-translate-y-[152px]'}`}
               onClick={menuOpenHandler}
             >
               {path === '/projects' ? (
@@ -122,11 +111,7 @@ const Navbar = () => {
                 path === '/contact'
                   ? 'bg-primary-700 dark:bg-primary-400'
                   : 'bg-neutral-100 hover:bg-primary-100 dark:bg-neutral-800 hover:dark:bg-neutral-700 border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200'
-              } ${
-                isMenuOpen
-                  ? 'translate-y-0'
-                  : '-translate-y-[200px]'
-              }`}
+              } ${isMenuOpen ? 'translate-y-0' : '-translate-y-[200px]'}`}
               onClick={menuOpenHandler}
             >
               {path === '/contact' ? (
@@ -139,9 +124,10 @@ const Navbar = () => {
         </div>
         <Logo isDarkTheme={themeContext.isDarkTheme} />
         <Button
-          type='secondary'
+          type='button'
+          intent='secondary'
           icon='only'
-					radius='full'
+          radius='full'
           onClick={toggleThemeHandler}
         >
           {themeContext.isDarkTheme ? (

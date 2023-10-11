@@ -35,17 +35,32 @@ const WebsiteCard = ({ project }) => {
           </div>
           <div className='w-full flex gap-2'>
             <Link href={project.link_notion} target='_blank' rel='noreferrer'>
-              <Button type='secondary' icon='only' radius='full'>
+              <Button
+                type='button'
+                intent='secondary'
+                icon='only'
+                radius='full'
+              >
                 <Notion className='w-5 h-5 fill-primary-700 dark:fill-primary-400' />
               </Button>
             </Link>
             <Link href={project.link_figma} target='_blank' rel='noreferrer'>
-              <Button type='secondary' icon='only' radius='full'>
+              <Button
+                type='button'
+                intent='secondary'
+                icon='only'
+                radius='full'
+              >
                 <Figma className='w-5 h-5 fill-primary-700 dark:fill-primary-400' />
               </Button>
             </Link>
             <Link href={project.link_github} target='_blank' rel='noreferrer'>
-              <Button type='secondary' icon='only' radius='full'>
+              <Button
+                type='button'
+                intent='secondary'
+                icon='only'
+                radius='full'
+              >
                 <Github className='w-5 h-5 fill-primary-700 dark:fill-primary-400' />
               </Button>
             </Link>
@@ -55,7 +70,7 @@ const WebsiteCard = ({ project }) => {
               rel='noreferrer'
               className='ml-auto'
             >
-              <Button type='primary' icon='only' radius='full'>
+              <Button type='button' intent='primary' icon='only' radius='full'>
                 <Globe className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700' />
               </Button>
             </Link>
@@ -105,7 +120,8 @@ const DesignCard = ({ project }) => {
           </div>
           <div className='w-full flex gap-2 justify-end'>
             <Button
-              type='primary'
+              type='button'
+              intent='primary'
               icon='only'
               radius='full'
               onClick={() => modalOpenHandler(project)}
@@ -121,12 +137,21 @@ const DesignCard = ({ project }) => {
             isModalOpen ? 'fixed' : 'hidden'
           } flex flex-col items-center p-4 z-50 top-0 left-0 bottom-0 right-0 w-full overflow-scroll bg-neutral-600/80 no-scrollbar`}
         >
-          <button
+          <Button
+            type='button'
+            intent='primary'
             onClick={() => setIsModalOpen(false)}
             className='ml-auto fixed flex justify-center items-center w-10 h-10 right-4 top-4'
           >
-            <Close width={40} height={40} color='#FEFEFE' />
-          </button>
+            <div>
+              <span
+                className={`block h-0.5 lg:w-4 w-5 my-0.5 rounded-full transition-all duration-300 ease-out bg-neutral-100 dark:bg-neutral-800 rotate-45 translate-y-0.5`}
+              />
+              <span
+                className={`block h-0.5 lg:w-4 w-5 my-0.5 rounded-full transition-all duration-300 ease-out bg-neutral-100 dark:bg-neutral-800 -rotate-45 -translate-y-0.5`}
+              />
+            </div>
+          </Button>
           <div className='mt-12 w-full max-w-[800px] flex flex-col'>
             {projectOpen.images.map((image, index) => (
               <Image

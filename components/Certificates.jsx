@@ -41,7 +41,7 @@ const CertificateDetails = ({ certificate }) => {
           target='_blank'
           className='absolute bottom-2 right-2 rounded-md bg-primary-300'
         >
-          <Button type='secondary' icon='only'>
+          <Button type='button' intent='secondary' icon='only'>
             <motion.div
               whileHover={{
                 y: -5,
