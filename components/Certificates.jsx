@@ -26,7 +26,7 @@ const CertificateDetails = ({ certificate }) => {
           className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
         />
       </div>
-      <div className='relative basis-10/12 flex flex-col border border-primary-500 rounded-lg p-4'>
+      <div className='relative basis-10/12 flex flex-col border border-primary-500 rounded-lg py-4 pl-4 pr-10'>
         <h2 className='lg:text-2xl text-xl font-bold text-primary-600 dark:text-primary-300'>
           {certificate.name}
         </h2>

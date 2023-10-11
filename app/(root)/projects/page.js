@@ -61,11 +61,11 @@ export default function Projects() {
           ))}
         </div>
         <div className='w-full flex flex-wrap gap-4 justify-center '>
-          {currentProjects.map((project) => {
+          {currentProjects.map((project, index) => {
             return project.category === 'Website' ? (
-              <WebsiteCard project={project} />
+              <WebsiteCard project={project} key={`website-${index}`} />
             ) : (
-              <DesignCard project={project} />
+              <DesignCard project={project} key={`design-${index}`} />
             );
           })}
         </div>

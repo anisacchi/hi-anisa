@@ -92,6 +92,7 @@ export default function Contact() {
             width={1500}
             height={1198}
             className='w-full sm:block hidden max-w-[360px] h-auto mb-4'
+						priority
           />
           <div className='flex gap-2 justify-center items-center'>
             <Link

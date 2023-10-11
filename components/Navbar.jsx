@@ -41,7 +41,7 @@ const Navbar = () => {
             intent='secondary'
             icon='only'
             radius='full'
-            className='absolute z-50 top-[1px]'
+            className='absolute z-30 top-[1px]'
             onClick={menuOpenHandler}
           >
             <div>
@@ -68,6 +68,7 @@ const Navbar = () => {
                   : 'bg-neutral-100 hover:bg-primary-100 dark:bg-neutral-800 hover:dark:bg-neutral-700 border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200'
               } ${isMenuOpen ? 'translate-y-0' : '-translate-y-[58px]'}`}
               onClick={menuOpenHandler}
+							scroll={false}
             >
               {path === '/' ? (
                 <HouseFill className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700' />
@@ -83,6 +84,7 @@ const Navbar = () => {
                   : 'bg-neutral-100 hover:bg-primary-100 dark:bg-neutral-800 hover:dark:bg-neutral-700 border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200'
               } ${isMenuOpen ? 'translate-y-0' : '-translate-y-[104px]'}`}
               onClick={menuOpenHandler}
+							scroll={false}
             >
               {path === '/about' ? (
                 <UserFill className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700' />
@@ -98,6 +100,7 @@ const Navbar = () => {
                   : 'bg-neutral-100 hover:bg-primary-100 dark:bg-neutral-800 hover:dark:bg-neutral-700 border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200'
               } ${isMenuOpen ? 'translate-y-0' : '-translate-y-[152px]'}`}
               onClick={menuOpenHandler}
+							scroll={false}
             >
               {path === '/projects' ? (
                 <LaptopFill className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700' />
@@ -113,6 +116,7 @@ const Navbar = () => {
                   : 'bg-neutral-100 hover:bg-primary-100 dark:bg-neutral-800 hover:dark:bg-neutral-700 border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200'
               } ${isMenuOpen ? 'translate-y-0' : '-translate-y-[200px]'}`}
               onClick={menuOpenHandler}
+							scroll={false}
             >
               {path === '/contact' ? (
                 <LetterFill className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700' />

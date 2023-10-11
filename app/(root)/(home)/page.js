@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Transition, TypeWriterEffect } from '@/components';
+import { Button, ButtonTop, Transition, TypeWriterEffect } from '@/components';
 import { ArrowRight, Key, UserRegular } from '@/components/icons';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -40,6 +40,7 @@ export default function Home() {
             width={1500}
             height={1500}
             className='w-full max-w-sm h-auto mb-4'
+						priority
           />
         </div>
         <div className='lg:basis-1/2 w-full flex flex-col justify-center items-center gap-10'>
@@ -127,14 +128,20 @@ export default function Home() {
                 />
               </div>
             </div>
-            <Link href='/about' className='w-full max-w-xs'>
-              <Button type='button' intent='primary' icon='left' radius='normal'>
+            <Link href='/about' className='w-full max-w-xs' scroll={false}>
+              <Button
+                type='button'
+                intent='primary'
+                icon='left'
+                radius='normal'
+              >
                 <span>Next</span>
                 <ArrowRight className='lg:w-4 w-5 lg:h-4 h-5 fill-neutral-100 dark:fill-neutral-700 translate-x-0 transition-all duration-300 ease-in-out group-hover:translate-x-1' />
               </Button>
             </Link>
           </div>
         </div>
+        <ButtonTop />
       </section>
     </>
   );

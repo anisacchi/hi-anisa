@@ -16,6 +16,7 @@ const CardProfile = () => {
         height={1442}
         alt='Anisa Permatasari'
         className='max-w-[180px] lg:w-48'
+				priority
       />
       <div className='w-full flex flex-col justify-center items-center'>
         <span className='font-semibold text-lg'>Anisa Permatasari</span>
@@ -39,7 +40,7 @@ const CardProfile = () => {
               <Download className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700 translate-y-0 group-hover:-translate-y-1 duration-300 transition-all ease-in-out' />
             </Button>
           </Link>
-          <Link href='/contact' className='w-full'>
+          <Link href='/contact' className='w-full' scroll={false}>
             <Button type='button' intent='secondary' icon='none'>
               <span>Contact</span>
             </Button>
