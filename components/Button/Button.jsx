@@ -3,7 +3,7 @@ import React from 'react';
 import { twMerge } from 'tailwind-merge';
 
 const buttonStyle = cva(
-  'w-full flex justify-center items-center gap-2 group cursor-pointer',
+  'w-full flex justify-center items-center gap-2 group cursor-pointer transition-all duration-300 ease-in-out',
   {
     variants: {
       type: {
@@ -14,7 +14,7 @@ const buttonStyle = cva(
         secondary: [
           'bg-neutral-100 dark:bg-neutral-800',
           'border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200',
-          'text-primary-700 dark:text-primary-400 hover:text-primary-800 hover:dark:text-primary-300 focus:text-primary-900 focus:dark:text-primary-200',
+          'text-sm font-semibold text-primary-700 dark:text-primary-400 hover:text-primary-800 hover:dark:text-primary-300 focus:text-primary-900 focus:dark:text-primary-200',
         ],
         disabled: [
           'bg-neutral-200 dark:bg-neutral-600',
@@ -22,8 +22,8 @@ const buttonStyle = cva(
         ],
       },
       icon: {
-				none: 'px-3 py-3',
-        right: 'py-3 lg:pr-4 pr-[18px] pl-4]',
+        none: 'px-3 py-3',
+        right: 'py-3 pr-[18px] pl-4',
         left: 'py-3 pr-4 pl-[18px]',
         only: 'w-11 h-11 p-3',
       },
@@ -34,7 +34,7 @@ const buttonStyle = cva(
     },
     defaultVariants: {
       type: 'primary',
-			icon: 'none',
+      icon: 'none',
       radius: 'normal',
     },
   }
@@ -42,7 +42,10 @@ const buttonStyle = cva(
 
 const Button = ({ type, icon, radius, className, children, ...props }) => {
   return (
-    <button className={twMerge(buttonStyle({ type, icon, radius }), className)} {...props}>
+    <button
+      className={twMerge(buttonStyle({ type, icon, radius }), className)}
+      {...props}
+    >
       {children}
     </button>
   );
