@@ -9,7 +9,7 @@ import { Button } from '.';
 const WebsiteCard = ({ project }) => {
   return (
     <Link href={project.link_demo} target='_blank' rel='noreferrer'>
-      <div className='w-full sm:max-w-[320px] rounded-lg border border-primary-500 bg-neutral-100 dark:bg-neutral-800 hover:shadow-shadow-pink overflow-hidden scale-100 hover:scale-[1.02] duration-300 ease-in-out'>
+      <div className='w-full sm:max-w-[320px] rounded-lg border border-primary-700 dark:border-primary-400 bg-neutral-100 dark:bg-neutral-800 hover:shadow-shadow-pink overflow-hidden scale-100 hover:scale-[1.02] duration-300 ease-in-out'>
         <Image
           src={project.cover_image}
           width={1366}
@@ -93,7 +93,7 @@ const DesignCard = ({ project }) => {
     <>
       <div
         onClick={() => modalOpenHandler(project)}
-        className='w-full sm:max-w-[320px] rounded-lg border border-primary-500 bg-neutral-100 dark:bg-neutral-800 hover:shadow-shadow-pink overflow-hidden scale-100 hover:scale-[1.02] duration-300 ease-in-out cursor-pointer'
+        className='w-full sm:max-w-[320px] rounded-lg border border-primary-700 dark:border-primary-400 bg-neutral-100 dark:bg-neutral-800 hover:shadow-shadow-pink overflow-hidden scale-100 hover:scale-[1.02] duration-300 ease-in-out cursor-pointer'
       >
         <Image
           src={project.cover_image}
