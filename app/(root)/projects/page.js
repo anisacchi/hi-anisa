@@ -52,9 +52,9 @@ export default function Projects() {
               onClick={() => categorySelectHandler(category)}
               className={`relative hover:text-primary-600 hover:dark:text-primary-200 ${
                 categorySelected === category
-                  ? 'font-semibold text-primary-600 dark:text-primary-500 hover:text-primary-600 hover:dark:text-primary-500 after:scale-100'
+                  ? 'font-semibold text-primary-600 dark:text-primary-200 hover:text-primary-600 hover:dark:text-primary-200 after:scale-100'
                   : 'text-neutral-800 dark:text-neutral-100 after:scale-0'
-              } after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:rounded-lg after:bg-primary-600 after:dark:bg-primary-500 after:duration-300 after:ease-in-out`}
+              } after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:rounded-lg after:bg-primary-600 after:dark:bg-primary-200 after:duration-300 after:ease-in-out`}
             >
               {category}
             </button>
