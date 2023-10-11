@@ -10,15 +10,18 @@ const buttonStyle = cva(
         primary: [
           'bg-primary-700 dark:bg-primary-400 hover:bg-primary-800 hover:dark:bg-primary-300 focus:bg-primary-900 focus:dark:bg-primary-200',
           'text-sm text-neutral-100 dark:text-neutral-700 font-semibold',
+          'cursor-pointer',
         ],
         secondary: [
           'bg-neutral-100 dark:bg-neutral-800',
           'border border-primary-700 dark:border-primary-400 hover:border-primary-800 hover:dark:border-primary-300 focus:border-primary-900 focus:dark:border-primary-200',
           'text-sm font-semibold text-primary-700 dark:text-primary-400 hover:text-primary-800 hover:dark:text-primary-300 focus:text-primary-900 focus:dark:text-primary-200',
+          'cursor-pointer',
         ],
         disabled: [
           'bg-neutral-200 dark:bg-neutral-600',
           'text-neutral-300 dark:text-neutral-400',
+          'cursor-default',
         ],
       },
       icon: {

@@ -3,12 +3,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { Close, Figma, Github, Globe, Notion } from './icons';
+import { Close, Eye, Figma, Github, Globe, Notion } from './icons';
+import { Button } from '.';
 
 const WebsiteCard = ({ project }) => {
   return (
     <Link href={project.link_demo} target='_blank' rel='noreferrer'>
-      <div className='w-full max-w-[280px] rounded-lg border border-primary-300 bg-neutral-100 dark:bg-neutral-600 hover:shadow-shadow-pink overflow-hidden scale-100 hover:scale-[1.02] duration-300 ease-in-out'>
+      <div className='w-full sm:max-w-[320px] rounded-lg border border-primary-500 bg-neutral-100 dark:bg-neutral-800 hover:shadow-shadow-pink overflow-hidden scale-100 hover:scale-[1.02] duration-300 ease-in-out'>
         <Image
           src={project.cover_image}
           width={1366}
@@ -16,10 +17,8 @@ const WebsiteCard = ({ project }) => {
           alt={`Cover ${project.name} project`}
         />
         <div className='flex flex-col p-4 gap-4'>
-          <div className='flex flex-col'>
-            <span className='lg:text-lg text-base font-bold'>
-              {project.name}
-            </span>
+          <div className='flex flex-col gap-2'>
+            <h2 className='lg:text-2xl text-xl font-bold'>{project.name}</h2>
             <p className='text-sm text-neutral-500 dark:text-neutral-200'>
               {project.description}
             </p>
@@ -28,44 +27,37 @@ const WebsiteCard = ({ project }) => {
             {project.techs.map((tech, index) => (
               <span
                 key={`tech-${index}`}
-                className='px-2 py-1 text-xs border border-primary-300 rounded-lg'
+                className='px-2 py-1 text-xs border border-primary-700 dark:border-primary-400 rounded-lg text-primary-700 dark:text-primary-400'
               >
                 {tech}
               </span>
             ))}
           </div>
           <div className='w-full flex gap-2'>
-            <Link
-              href={project.link_notion}
-              target='_blank'
-              rel='noreferrer'
-              className='p-2 rounded-full bg-primary-300'
-            >
-              <Notion width={18} height={18} color='#FEFEFE' />
+            <Link href={project.link_notion} target='_blank' rel='noreferrer'>
+              <Button type='secondary' icon='only' radius='full'>
+                <Notion className='w-5 h-5 fill-primary-700 dark:fill-primary-400' />
+              </Button>
             </Link>
-            <Link
-              href={project.link_figma}
-              target='_blank'
-              rel='noreferrer'
-              className='p-2 rounded-full bg-primary-300'
-            >
-              <Figma width={18} height={18} color='#FEFEFE' />
+            <Link href={project.link_figma} target='_blank' rel='noreferrer'>
+              <Button type='secondary' icon='only' radius='full'>
+                <Figma className='w-5 h-5 fill-primary-700 dark:fill-primary-400' />
+              </Button>
             </Link>
-            <Link
-              href={project.link_github}
-              target='_blank'
-              rel='noreferrer'
-              className='p-2 rounded-full bg-primary-300'
-            >
-              <Github width={18} height={18} color='#FEFEFE' />
+            <Link href={project.link_github} target='_blank' rel='noreferrer'>
+              <Button type='secondary' icon='only' radius='full'>
+                <Github className='w-5 h-5 fill-primary-700 dark:fill-primary-400' />
+              </Button>
             </Link>
             <Link
               href={project.link_demo}
               target='_blank'
               rel='noreferrer'
-              className='ml-auto p-2 rounded-full bg-primary-300'
+              className='ml-auto'
             >
-              <Globe width={18} height={18} color='#FEFEFE' />
+              <Button type='primary' icon='only' radius='full'>
+                <Globe className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700' />
+              </Button>
             </Link>
           </div>
         </div>
@@ -86,7 +78,7 @@ const DesignCard = ({ project }) => {
     <>
       <div
         onClick={() => modalOpenHandler(project)}
-        className='w-full max-w-[280px] rounded-lg border border-primary-300 bg-neutral-100 dark:bg-neutral-600 hover:shadow-shadow-pink overflow-hidden scale-100 hover:scale-[1.02] duration-300 ease-in-out'
+        className='w-full sm:max-w-[320px] rounded-lg border border-primary-500 bg-neutral-100 dark:bg-neutral-800 hover:shadow-shadow-pink overflow-hidden scale-100 hover:scale-[1.02] duration-300 ease-in-out cursor-pointer'
       >
         <Image
           src={project.cover_image}
@@ -95,10 +87,8 @@ const DesignCard = ({ project }) => {
           alt={`Cover ${project.name} project`}
         />
         <div className='flex flex-col p-4 gap-4'>
-          <div className='flex flex-col'>
-            <span className='lg:text-lg text-base font-bold'>
-              {project.name}
-            </span>
+          <div className='flex flex-col gap-2'>
+            <h2 className='lg:text-2xl text-xl font-bold'>{project.name}</h2>
             <p className='text-sm text-neutral-500 dark:text-neutral-200'>
               {project.description}
             </p>
@@ -107,11 +97,21 @@ const DesignCard = ({ project }) => {
             {project.techs.map((tech, index) => (
               <span
                 key={`tech-${index}`}
-                className='px-2 py-1 text-xs border border-primary-300 rounded-lg'
+                className='px-2 py-1 text-xs border border-primary-700 dark:border-primary-400 rounded-lg text-primary-700 dark:text-primary-400'
               >
                 {tech}
               </span>
             ))}
+          </div>
+          <div className='w-full flex gap-2 justify-end'>
+            <Button
+              type='primary'
+              icon='only'
+              radius='full'
+              onClick={() => modalOpenHandler(project)}
+            >
+              <Eye className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700' />
+            </Button>
           </div>
         </div>
       </div>
