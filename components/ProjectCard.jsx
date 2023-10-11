@@ -93,7 +93,7 @@ const DesignCard = ({ project }) => {
               {project.description}
             </p>
           </div>
-          <div className='w-full flex flex-wrap gap-2'>
+          <div className='w-full mt-auto flex flex-wrap gap-2'>
             {project.techs.map((tech, index) => (
               <span
                 key={`tech-${index}`}
@@ -102,17 +102,6 @@ const DesignCard = ({ project }) => {
                 {tech}
               </span>
             ))}
-          </div>
-          <div className='w-full flex gap-2 justify-end'>
-            <Button
-              type='button'
-              intent='primary'
-              icon='only'
-              radius='full'
-              onClick={() => modalOpenHandler(project)}
-            >
-              <Eye className='w-5 h-5 fill-neutral-100 dark:fill-neutral-700' />
-            </Button>
           </div>
         </div>
       </div>
