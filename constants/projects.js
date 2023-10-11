@@ -7,7 +7,7 @@ const projects = [
       'This is a portfolio website project used to introduce myself and showcase my best work.',
     category: 'Website',
     techs: ['Next.js', 'Tailwind', 'Framer Motion'],
-    cover_image: '/projects/posterppdb-1.webp',
+    cover_image: '/projects/hianisa.webp',
     images: [],
     link_demo: 'https://hi-anisa.netlify.app',
     link_notion:
