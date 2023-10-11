@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Transition } from '@/components';
+import { Button, Transition } from '@/components';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from 'react-hot-toast';
@@ -85,7 +85,7 @@ export default function Contact() {
     <>
       <Transition />
       <section className='w-full flex sm:flex-row flex-col-reverse justify-center items-center gap-6'>
-        <div className='h-full basis-1/2 flex flex-col justify-center items-center'>
+        <div className='h-full sm:basis-1/2 w-full flex flex-col justify-center items-center'>
           <Image
             src='/hero2.webp'
             alt='Hero'
@@ -98,47 +98,71 @@ export default function Contact() {
               href='https://id.linkedin.com/in/anisa-permatasari-727094235'
               target='_blank'
               rel='noreferrer'
-              className='p-2 rounded-full border border-primary-300 bg-neutral-100 hover:bg-primary-300 dark:bg-neutral-600 dark:hover:bg-primary-300 transition-all ease-in-out duration-300'
             >
-              <LinkedIn width={24} height={24} color='#FFA7A6' />
+              <Button
+                type='button'
+                intent='secondary'
+                icon='only'
+                radius='full'
+              >
+                <LinkedIn className='h-5 w-5 fill-primary-700 dark:fill-primary-400' />
+              </Button>
             </Link>
             <Link
               href='https://github.com/anisacchi'
               target='_blank'
               rel='noreferrer'
-              className='p-2 rounded-full border border-primary-300 bg-neutral-100 hover:bg-primary-300 dark:bg-neutral-600 dark:hover:bg-primary-300 transition-all ease-in-out duration-300'
             >
-              <Github width={24} height={24} color='#FFA7A6' />
+              <Button
+                type='button'
+                intent='secondary'
+                icon='only'
+                radius='full'
+              >
+                <Github className='h-5 w-5 fill-primary-700 dark:fill-primary-400' />
+              </Button>
             </Link>
             <Link
               href='https://twitter.com/anisacchii'
               target='_blank'
               rel='noreferrer'
-              className='p-2 rounded-full border border-primary-300 bg-neutral-100 hover:bg-primary-300 dark:bg-neutral-600 dark:hover:bg-primary-300 transition-all ease-in-out duration-300'
             >
-              <X width={24} height={24} color='#FFA7A6' />
+              <Button
+                type='button'
+                intent='secondary'
+                icon='only'
+                radius='full'
+              >
+                <X className='h-10 w-10 fill-primary-700 dark:fill-primary-400' />
+              </Button>
             </Link>
             <Link
               href='https://www.instagram.com/anisa.__.chi/'
               target='_blank'
               rel='noreferrer'
-              className='p-2 rounded-full border border-primary-300 bg-neutral-100 hover:bg-primary-300 dark:bg-neutral-600 dark:hover:bg-primary-300 transition-all ease-in-out duration-300'
             >
-              <Instagram width={24} height={24} color='#FFA7A6' />
+              <Button
+                type='button'
+                intent='secondary'
+                icon='only'
+                radius='full'
+              >
+                <Instagram className='h-5 w-5 fill-primary-700 dark:fill-primary-400' />
+              </Button>
             </Link>
           </div>
         </div>
-        <div className='basis-1/2 max-w-xs p-4 flex flex-col gap-6 justify-center items-center bg-neutral-100 dark:bg-neutral-600 border border-primary-300 shadow-shadow-pink rounded-lg'>
-          <h3 className='text-primary-300 lg:text-2xl text-xl font-bold tracking-wide'>
+        <div className='sm:basis-1/2 w-full max-w-sm p-4 flex flex-col gap-6 justify-center items-center bg-neutral-100 dark:bg-neutral-800 border border-primary-700 dark:border-primary-400 shadow-shadow-pink rounded-lg'>
+          <h1 className='text-primary-700 dark:text-primary-400 lg:text-4xl text-2xl font-bold tracking-wide'>
             Get In Touch <span className='inline-block animate-wiggle'>👋</span>
-          </h3>
+          </h1>
           <form
             ref={formRef}
             onSubmit={submitHandler}
             className='w-full flex flex-col justify-center items-center gap-4'
           >
             <div className='relative w-full'>
-              <label className='absolute top-0 left-2 text-xs font-semibold text-primary-400 dark:text-primary-200 bg-neutral-100 dark:bg-neutral-600 px-1'>
+              <label className='absolute top-0 left-2 text-sm font-semibold text-primary-700 dark:text-primary-300 bg-neutral-100 dark:bg-neutral-800 px-1'>
                 Name
               </label>
               <input
@@ -149,11 +173,11 @@ export default function Contact() {
                 onChange={changeInputHandler}
                 autoComplete='off'
                 required
-                className='w-full mt-2 py-3 px-4 rounded-lg outline-none border border-primary-300 md:text-sm text-base bg-transparent focus:border-2 focus:border-primary-400 dark:focus:border-primary-100'
+                className='w-full mt-2 pt-4 pb-3 px-4 rounded-lg outline-none border border-primary-700 dark:border-primary-400 md:text-sm text-base bg-neutral-100 dark:bg-neutral-800 focus:border-2 focus:border-primary-800 dark:focus:border-primary-300'
               />
             </div>
             <div className='relative w-full'>
-              <label className='absolute top-0 left-2 text-xs font-semibold text-primary-400 dark:text-primary-200 bg-neutral-100 dark:bg-neutral-600 px-1'>
+              <label className='absolute top-0 left-2 text-sm font-semibold text-primary-700 dark:text-primary-300 bg-neutral-100 dark:bg-neutral-800 px-1'>
                 Email
               </label>
               <input
@@ -164,11 +188,11 @@ export default function Contact() {
                 onChange={changeInputHandler}
                 autoComplete='off'
                 required
-                className='w-full mt-2 py-3 px-4 rounded-lg outline-none border border-primary-300 md:text-sm text-base bg-transparent focus:border-2 focus:border-primary-400 dark:focus:border-primary-100'
+                className='w-full mt-2 pt-4 pb-3 px-4 rounded-lg outline-none border border-primary-700 dark:border-primary-400 md:text-sm text-base bg-neutral-100 dark:bg-neutral-800 focus:border-2 focus:border-primary-800 dark:focus:border-primary-300'
               />
             </div>
             <div className='relative w-full'>
-              <label className='absolute top-0 left-2 text-xs font-semibold text-primary-400 dark:text-primary-200 bg-neutral-100 dark:bg-neutral-600 px-1'>
+              <label className='absolute top-0 left-2 text-sm font-semibold text-primary-700 dark:text-primary-300 bg-neutral-100 dark:bg-neutral-800 px-1'>
                 Email
               </label>
               <textarea
@@ -179,16 +203,13 @@ export default function Contact() {
                 onChange={changeInputHandler}
                 autoComplete='off'
                 required
-                className='w-full mt-2 py-3 px-4 rounded-lg outline-none border border-primary-300 md:text-sm text-base bg-transparent focus:border-2 focus:border-primary-400 dark:focus:border-primary-100'
+                className='w-full mt-2 pt-4 pb-3 px-4 rounded-lg outline-none border border-primary-700 dark:border-primary-400 md:text-sm text-base bg-neutral-100 dark:bg-neutral-800 focus:border-2 focus:border-primary-800 dark:focus:border-primary-300'
               />
             </div>
             <div className='w-full flex justify-start'>
-              <button
-                type='submit'
-                className='py-2 px-4 bg-primary-300 hover:bg-primary-300/80 rounded-lg transition-all duration-300 ease-in-out'
-              >
-                {loading ? 'Sending...' : 'Send'}
-              </button>
+              <Button type='submit' intent='primary' icon='none'>
+                <span>{loading ? 'Sending...' : 'Send'}</span>
+              </Button>
             </div>
           </form>
         </div>

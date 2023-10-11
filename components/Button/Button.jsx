@@ -6,7 +6,7 @@ const buttonStyle = cva(
   'w-full flex justify-center items-center gap-2 group cursor-pointer transition-all duration-300 ease-in-out',
   {
     variants: {
-      type: {
+      intent: {
         primary: [
           'bg-primary-700 dark:bg-primary-400 hover:bg-primary-800 hover:dark:bg-primary-300 focus:bg-primary-900 focus:dark:bg-primary-200',
           'text-sm text-neutral-100 dark:text-neutral-700 font-semibold',
@@ -36,17 +36,26 @@ const buttonStyle = cva(
       },
     },
     defaultVariants: {
-      type: 'primary',
+      intent: 'primary',
       icon: 'none',
       radius: 'normal',
     },
   }
 );
 
-const Button = ({ type, icon, radius, className, children, ...props }) => {
+const Button = ({
+  type,
+  intent,
+  icon,
+  radius,
+  className,
+  children,
+  ...props
+}) => {
   return (
     <button
-      className={twMerge(buttonStyle({ type, icon, radius }), className)}
+      type={type}
+      className={twMerge(buttonStyle({ intent, icon, radius }), className)}
       {...props}
     >
       {children}
