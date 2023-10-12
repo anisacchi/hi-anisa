@@ -6,7 +6,7 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from 'react-hot-toast';
 import Link from 'next/link';
-import { Github, Instagram, LinkedIn, X } from '@/components/icons';
+import { Github, Instagram, LinkedIn, WhatsApp, X } from '@/components/icons';
 
 export default function Contact() {
   const formRef = useRef();
@@ -92,9 +92,23 @@ export default function Contact() {
             width={1500}
             height={1198}
             className='w-full sm:block hidden max-w-[360px] h-auto mb-4'
-						priority
+            priority
           />
           <div className='flex gap-2 justify-center items-center'>
+            <Link
+              href='https://wa.me/+6285791336463'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <Button
+                type='button'
+                intent='secondary'
+                icon='only'
+                radius='full'
+              >
+                <WhatsApp className='h-5 w-5 fill-primary-700 dark:fill-primary-400' />
+              </Button>
+            </Link>
             <Link
               href='https://id.linkedin.com/in/anisa-permatasari-727094235'
               target='_blank'
