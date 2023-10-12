@@ -56,6 +56,7 @@ const Button = ({
     <button
       type={type}
       className={twMerge(buttonStyle({ intent, icon, radius }), className)}
+			disabled={intent === 'disabled' ? true : false} 
       {...props}
     >
       {children}
