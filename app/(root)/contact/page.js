@@ -194,7 +194,7 @@ export default function Contact() {
             </div>
             <div className='relative w-full'>
               <label className='absolute top-0 left-2 text-sm font-semibold text-primary-700 dark:text-primary-300 bg-neutral-100 dark:bg-neutral-800 px-1'>
-                Email
+                Message
               </label>
               <textarea
                 rows={3}
