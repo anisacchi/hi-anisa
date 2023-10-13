@@ -34,7 +34,7 @@ const ButtonTop = () => {
       radius='full'
       className={`${
         isVisible ? 'scale-100' : 'scale-0'
-      } fixed z-50 bottom-4 right-4 transition-all ease-out duration-300`}
+      } fixed z-50 bottom-20 right-4 transition-all ease-out duration-300`}
       onClick={scrollToTopHandler}
     >
       <motion.div
