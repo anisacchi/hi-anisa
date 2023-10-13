@@ -84,14 +84,14 @@ export default function Contact() {
   return (
     <>
       <Transition />
-      <section className='w-full h-full flex sm:flex-row flex-col-reverse justify-center items-center gap-6'>
-        <div className='h-full sm:basis-1/2 w-full flex flex-col justify-center items-center'>
+      <section className='w-full h-full flex md:flex-row flex-col-reverse justify-center items-center gap-6'>
+        <div className='h-full lg:basis-1/2 w-full flex flex-col justify-start md:justify-center items-center'>
           <Image
             src='/hero2.webp'
             alt='Hero'
             width={1500}
             height={1198}
-            className='w-full sm:block hidden max-w-[360px] h-auto mb-4'
+            className='w-full md:block hidden max-w-[360px] h-auto mb-4'
             priority
           />
           <div className='flex gap-2 justify-center items-center'>
@@ -167,7 +167,7 @@ export default function Contact() {
             </Link>
           </div>
         </div>
-        <div className='sm:basis-1/2 w-full max-w-sm p-4 flex flex-col gap-6 justify-center items-center bg-neutral-100 dark:bg-neutral-800 border border-primary-700 dark:border-primary-400 shadow-shadow-pink rounded-lg'>
+        <div className='lg:basis-1/2 w-full max-w-sm p-4 flex flex-col gap-6 justify-center items-center bg-neutral-100 dark:bg-neutral-800 border border-primary-700 dark:border-primary-400 shadow-shadow-pink rounded-lg'>
           <h1 className='text-primary-700 dark:text-primary-400 lg:text-4xl text-2xl font-bold tracking-wide'>
             Get In Touch <span className='inline-block animate-wiggle'>👋</span>
           </h1>
