@@ -84,7 +84,7 @@ export default function Contact() {
   return (
     <>
       <Transition />
-      <section className='w-full flex sm:flex-row flex-col-reverse justify-center items-center gap-6'>
+      <section className='w-full h-full flex sm:flex-row flex-col-reverse justify-center items-center gap-6'>
         <div className='h-full sm:basis-1/2 w-full flex flex-col justify-center items-center'>
           <Image
             src='/hero2.webp'

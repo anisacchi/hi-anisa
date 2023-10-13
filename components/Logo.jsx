@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const Logo = ({ isDarkTheme }) => {
+const Logo = () => {
   return (
     <div className='flex justify-center items-center'>
       <Link

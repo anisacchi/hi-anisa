@@ -30,7 +30,7 @@ const Header = () => {
     <>
       {path === '/' ? (
         <header className='w-full flex justify-between items-center padding-x py-2'>
-          <Logo isDarkTheme={themeContext.isDarkTheme} />
+          <Logo />
           <Button
             type='button'
             intent='secondary'
@@ -77,114 +77,167 @@ const Header = () => {
         </header>
       ) : (
         <>
-          <header className='w-full flex justify-between items-center padding-x py-2'>
-            <Logo isDarkTheme={themeContext.isDarkTheme} />
-            <Button
-              type='button'
-              intent='secondary'
-              icon='only'
-              radius='full'
-              onClick={toggleThemeHandler}
-            >
-              {themeContext.isDarkTheme ? (
-                <motion.div
-                  whileHover={{
-                    rotate: 360,
-                    transition: {
-                      duration: 1.5,
-                      repeat: Infinity,
-                      ease: 'linear',
-                    },
-                  }}
+          <header className='w-full md:w-[81px] md:bg-neutral-100 md:dark:bg-neutral-700 border-r-0 md:border-r border-r-primary-200 dark:border-r-0'>
+            <div className='md:hidden flex justify-between items-center padding-x py-2'>
+              <Logo />
+              <Button
+                type='button'
+                intent='secondary'
+                icon='only'
+                radius='full'
+                onClick={toggleThemeHandler}
+              >
+                {themeContext.isDarkTheme ? (
+                  <motion.div
+                    whileHover={{
+                      rotate: 360,
+                      transition: {
+                        duration: 1.5,
+                        repeat: Infinity,
+                        ease: 'linear',
+                      },
+                    }}
+                  >
+                    <Sun
+                      width={20}
+                      height={20}
+                      className='fill-primary-700 dark:fill-primary-400 group-hover:fill-primary-800 group-hover:dark:fill-primary-300'
+                    />
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    whileHover={{
+                      rotate: [0, 20, 0, -20, 0],
+                      transition: {
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: 'linear',
+                      },
+                    }}
+                  >
+                    <MoonStars
+                      width={20}
+                      height={20}
+                      className='fill-primary-700 dark:fill-primary-400 group-hover:fill-primary-800 group-hover:dark:fill-primary-300 '
+                    />
+                  </motion.div>
+                )}
+              </Button>
+            </div>
+            <div className='w-full md:w-20 flex flex-row md:flex-col justify-center items-center border-r-0 md:border-r border-r-primary-200'>
+              <div className='fixed z-10 left-0 bottom-0 md:top-4 md:bottom-4 w-full md:w-20 flex flex-col justify-between items-center'>
+                <div className='hidden md:block'>
+                  <Logo />
+                </div>
+                <nav className='flex flex-row md:flex-col md:mt-4 justify-between items-center w-full border-t rounded-t-lg border-t-primary-200 md:border-t-0 dark:border-t-0 bg-neutral-100 dark:bg-neutral-700'>
+                  <Link
+                    href='/'
+                    className={`w-full p-4 flex justify-center items-center transition-all duration-300 ease-out ${
+                      path === '/'
+                        ? 'border-b-2 md:border-b-0 md:border-l-2 border-primary-700 dark:border-primary-400'
+                        : 'border-b-0'
+                    }`}
+                    scroll={false}
+                  >
+                    {path === '/' ? (
+                      <HouseFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
+                    ) : (
+                      <HouseRegular className='w-6 h-6 fill-neutral-700 dark:fill-neutral-100' />
+                    )}
+                  </Link>
+                  <Link
+                    href='/about'
+                    className={`w-full p-4 flex justify-center items-center transition-all duration-300 ease-out ${
+                      path === '/about'
+                        ? 'border-b-2 md:border-b-0 md:border-l-2 border-primary-700 dark:border-primary-400'
+                        : 'border-b-0'
+                    }`}
+                    scroll={false}
+                  >
+                    {path === '/about' ? (
+                      <UserFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
+                    ) : (
+                      <UserRegular className='w-6 h-6 fill-neutral-700 dark:fill-neutral-100' />
+                    )}
+                  </Link>
+                  <Link
+                    href='/projects'
+                    className={`w-full p-4 flex justify-center items-center transition-all duration-300 ease-out ${
+                      path === '/projects'
+                        ? 'border-b-2 md:border-b-0 md:border-l-2 border-primary-700 dark:border-primary-400'
+                        : 'border-b-0'
+                    }`}
+                    scroll={false}
+                  >
+                    {path === '/projects' ? (
+                      <LaptopFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
+                    ) : (
+                      <LaptopRegular className='w-6 h-6 fill-neutral-700 dark:fill-neutral-100' />
+                    )}
+                  </Link>
+                  <Link
+                    href='/contact'
+                    className={`w-full p-4 flex justify-center items-center transition-all duration-300 ease-out ${
+                      path === '/contact'
+                        ? 'border-b-2 md:border-b-0 md:border-l-2 border-primary-700 dark:border-primary-400'
+                        : 'border-b-0'
+                    }`}
+                    scroll={false}
+                  >
+                    {path === '/contact' ? (
+                      <LetterFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
+                    ) : (
+                      <LetterRegular className='w-66 h-6 fill-neutral-700 dark:fill-neutral-100' />
+                    )}
+                  </Link>
+                </nav>
+                <Button
+                  type='button'
+                  intent='secondary'
+                  icon='only'
+                  radius='full'
+                  onClick={toggleThemeHandler}
+                  className='hidden md:block mt-auto'
                 >
-                  <Sun
-                    width={20}
-                    height={20}
-                    className='fill-primary-700 dark:fill-primary-400 group-hover:fill-primary-800 group-hover:dark:fill-primary-300'
-                  />
-                </motion.div>
-              ) : (
-                <motion.div
-                  whileHover={{
-                    rotate: [0, 20, 0, -20, 0],
-                    transition: {
-                      duration: 2,
-                      repeat: Infinity,
-                      ease: 'linear',
-                    },
-                  }}
-                >
-                  <MoonStars
-                    width={20}
-                    height={20}
-                    className='fill-primary-700 dark:fill-primary-400 group-hover:fill-primary-800 group-hover:dark:fill-primary-300 '
-                  />
-                </motion.div>
-              )}
-            </Button>
+                  {themeContext.isDarkTheme ? (
+                    <motion.div
+                      whileHover={{
+                        rotate: 360,
+                        transition: {
+                          duration: 1.5,
+                          repeat: Infinity,
+                          ease: 'linear',
+                        },
+                      }}
+                    >
+                      <Sun
+                        width={20}
+                        height={20}
+                        className='fill-primary-700 dark:fill-primary-400 group-hover:fill-primary-800 group-hover:dark:fill-primary-300'
+                      />
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      whileHover={{
+                        rotate: [0, 20, 0, -20, 0],
+                        transition: {
+                          duration: 2,
+                          repeat: Infinity,
+                          ease: 'linear',
+                        },
+                      }}
+                    >
+                      <MoonStars
+                        width={20}
+                        height={20}
+                        className='fill-primary-700 dark:fill-primary-400 group-hover:fill-primary-800 group-hover:dark:fill-primary-300 '
+                      />
+                    </motion.div>
+                  )}
+                </Button>
+              </div>
+            </div>
           </header>
-          <nav className='fixed z-10 bottom-0 w-full px-4 flex justify-between items-center border-t rounded-t-lg border-t-primary-200 dark:border-t-0 bg-neutral-100 dark:bg-neutral-700'>
-            <Link
-              href='/'
-              className={`w-full p-2 flex justify-center items-center transition-all duration-300 ease-out ${
-                path === '/'
-                  ? 'border-b-2 border-primary-700 dark:border-primary-400'
-                  : 'border-b-0'
-              }`}
-              scroll={false}
-            >
-              {path === '/' ? (
-                <HouseFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
-              ) : (
-                <HouseRegular className='w-6 h-6 fill-neutral-700 dark:fill-neutral-100' />
-              )}
-            </Link>
-            <Link
-              href='/about'
-              className={`w-full p-4 flex justify-center items-center transition-all duration-300 ease-out ${
-                path === '/about'
-                  ? 'border-b-2 border-primary-700 dark:border-primary-400'
-                  : 'border-b-0'
-              }`}
-              scroll={false}
-            >
-              {path === '/about' ? (
-                <UserFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
-              ) : (
-                <UserRegular className='w-6 h-6 fill-neutral-700 dark:fill-neutral-100' />
-              )}
-            </Link>
-            <Link
-              href='/projects'
-              className={`w-full p-4 flex justify-center items-center transition-all duration-300 ease-out ${
-                path === '/projects'
-                  ? 'border-b-2 border-primary-700 dark:border-primary-400'
-                  : 'border-b-0'
-              }`}
-              scroll={false}
-            >
-              {path === '/projects' ? (
-                <LaptopFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
-              ) : (
-                <LaptopRegular className='w-6 h-6 fill-neutral-700 dark:fill-neutral-100' />
-              )}
-            </Link>
-            <Link
-              href='/contact'
-              className={`w-full p-4 flex justify-center items-center transition-all duration-300 ease-out ${
-                path === '/contact'
-                  ? 'border-b-2 border-primary-700 dark:border-primary-400'
-                  : 'border-b-0'
-              }`}
-              scroll={false}
-            >
-              {path === '/contact' ? (
-                <LetterFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
-              ) : (
-                <LetterRegular className='w-66 h-6 fill-neutral-700 dark:fill-neutral-100' />
-              )}
-            </Link>
-          </nav>
         </>
       )}
     </>

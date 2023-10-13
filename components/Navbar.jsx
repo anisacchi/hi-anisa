@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className='relative w-full lg:shadow-none shadow-shadow-neutral padding-x py-4 flex justify-between items-center'>
+      {/* <header className='relative w-full lg:shadow-none shadow-shadow-neutral padding-x py-4 flex justify-between items-center'>
         <div className='relative w-12 h-12'>
           <Button
             type='button'
@@ -176,7 +176,7 @@ const Navbar = () => {
           isMenuOpen ? 'block' : 'hidden'
         }`}
         onClick={menuOpenHandler}
-      />
+      /> */}
     </>
   );
 };

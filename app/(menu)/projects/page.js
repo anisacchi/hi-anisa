@@ -60,7 +60,7 @@ export default function Projects() {
             </button>
           ))}
         </div>
-        <div className='w-full h-full flex flex-wrap gap-4 justify-center '>
+        <div className='w-full flex flex-wrap gap-4 justify-center '>
           {currentProjects.map((project, index) => {
             return project.category === 'Website' ? (
               <WebsiteCard project={project} key={`website-${index}`} />

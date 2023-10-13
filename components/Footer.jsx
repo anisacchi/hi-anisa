@@ -7,9 +7,9 @@ const Footer = () => {
   const path = usePathname();
   return (
     <footer
-      className={`w-full padding-x ${
-        path === '/' ? 'py-4' : 'pb-[76px] pt-4'
-      } bg-primary-100 dark:bg-neutral-900 flex sm:flex-row flex-col justify-between items-center text-xs text-neutral-500 dark:text-neutral-200`}
+      className={`w-full padding ${
+        path === '/' ? 'mb-0' : 'mb-[58px]'
+      } md:mb-0 bg-primary-100 dark:bg-neutral-900 flex sm:flex-row flex-col justify-between items-center text-xs text-neutral-500 dark:text-neutral-200`}
     >
       <span>©️ 2023</span>
       <p>
