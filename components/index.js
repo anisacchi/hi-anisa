@@ -1,3 +1,4 @@
+import Header from './Header';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Logo from './Logo';
@@ -13,6 +14,7 @@ import { WebsiteCard, DesignCard } from './ProjectCard';
 import Button from './Button/Button';
 
 export {
+	Header,
   Navbar,
   Footer,
   Logo,

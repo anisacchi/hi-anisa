@@ -17,7 +17,7 @@ export default function About() {
           <div className='flex justify-center w-full h-auto lg:basis-5/12'>
             <CardProfile />
           </div>
-          <div className='lg:w-7/12 w-full lg:pt-4 pt-8 flex flex-col lg:gap-10 gap-8'>
+          <div className='lg:w-7/12 w-full lg:pt-0 pt-8 flex flex-col lg:gap-10 gap-8'>
             <p>
               Hi, I am a passionate React/Front-End Developer and have a deep
               love for learning, especially about IT, where I am constantly
