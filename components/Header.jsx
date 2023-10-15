@@ -77,7 +77,7 @@ const Header = () => {
         </header>
       ) : (
         <>
-          <header className='w-full md:w-[81px] md:bg-neutral-100 md:dark:bg-neutral-700 border-r-0 md:border-r border-r-primary-200 dark:border-r-0'>
+          <header className='w-full md:w-[81px] lg:w-[161px] md:bg-neutral-100 md:dark:bg-neutral-700 border-r-0 md:border-r border-r-primary-200 dark:border-r-0'>
             <div className='md:hidden flex justify-between items-center padding-x py-2'>
               <Logo />
               <Button
@@ -124,15 +124,15 @@ const Header = () => {
                 )}
               </Button>
             </div>
-            <div className='w-full md:w-20 flex flex-row md:flex-col justify-center items-center border-r-0 md:border-r border-r-primary-200'>
-              <div className='fixed z-10 left-0 bottom-0 md:top-4 md:bottom-4 w-full md:w-20 flex flex-col justify-between items-center'>
+            <div className='w-full md:w-20 lg:w-40 flex flex-row md:flex-col justify-center items-center border-r-0 md:border-r border-r-primary-200'>
+              <div className='fixed z-10 left-0 bottom-0 md:top-8 md:bottom-8 w-full md:w-20 lg:w-36 flex flex-col justify-between items-center'>
                 <div className='hidden md:block'>
                   <Logo />
                 </div>
-                <nav className='flex flex-row md:flex-col md:mt-4 justify-between items-center w-full border-t rounded-t-lg border-t-primary-200 md:border-t-0 dark:border-t-0 bg-neutral-100 dark:bg-neutral-700'>
+                <nav className='flex flex-row md:flex-col md:mt-10 justify-between items-center w-full border-t rounded-t-lg border-t-primary-200 md:border-t-0 dark:border-t-0 bg-neutral-100 dark:bg-neutral-700'>
                   <Link
                     href='/'
-                    className={`w-full p-4 flex justify-center items-center transition-all duration-300 ease-out ${
+                    className={`w-full p-4 flex justify-center items-center gap-4 transition-all duration-300 ease-out ${
                       path === '/'
                         ? 'border-b-2 md:border-b-0 md:border-l-2 border-primary-700 dark:border-primary-400'
                         : 'border-b-0'
@@ -140,14 +140,24 @@ const Header = () => {
                     scroll={false}
                   >
                     {path === '/' ? (
-                      <HouseFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
+                      <>
+                        <HouseFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
+                        <span className='lg:block hidden text-primary-700 dark:text-primary-400 font-semibold'>
+                          Home
+                        </span>
+                      </>
                     ) : (
-                      <HouseRegular className='w-6 h-6 fill-neutral-700 dark:fill-neutral-100' />
+                      <>
+                        <HouseRegular className='w-6 h-6 fill-neutral-500 dark:fill-neutral-100' />
+                        <span className='lg:block hidden text-neutral-600 dark:text-neutral-100'>
+                          Home
+                        </span>
+                      </>
                     )}
                   </Link>
                   <Link
                     href='/about'
-                    className={`w-full p-4 flex justify-center items-center transition-all duration-300 ease-out ${
+                    className={`w-full p-4 flex justify-center items-center gap-4 transition-all duration-300 ease-out ${
                       path === '/about'
                         ? 'border-b-2 md:border-b-0 md:border-l-2 border-primary-700 dark:border-primary-400'
                         : 'border-b-0'
@@ -155,14 +165,24 @@ const Header = () => {
                     scroll={false}
                   >
                     {path === '/about' ? (
-                      <UserFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
+                      <>
+                        <UserFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
+                        <span className='lg:block hidden text-primary-700 dark:text-primary-400 font-semibold'>
+                          About
+                        </span>
+                      </>
                     ) : (
-                      <UserRegular className='w-6 h-6 fill-neutral-700 dark:fill-neutral-100' />
+                      <>
+                        <UserRegular className='w-6 h-6 fill-neutral-500 dark:fill-neutral-100' />
+                        <span className='lg:block hidden text-neutral-600 dark:text-neutral-100'>
+                          About
+                        </span>
+                      </>
                     )}
                   </Link>
                   <Link
                     href='/projects'
-                    className={`w-full p-4 flex justify-center items-center transition-all duration-300 ease-out ${
+                    className={`w-full p-4 flex justify-center items-center gap-4 transition-all duration-300 ease-out ${
                       path === '/projects'
                         ? 'border-b-2 md:border-b-0 md:border-l-2 border-primary-700 dark:border-primary-400'
                         : 'border-b-0'
@@ -170,14 +190,24 @@ const Header = () => {
                     scroll={false}
                   >
                     {path === '/projects' ? (
-                      <LaptopFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
+                      <>
+                        <LaptopFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
+                        <span className='lg:block hidden text-primary-700 dark:text-primary-400 font-semibold'>
+                          Projects
+                        </span>
+                      </>
                     ) : (
-                      <LaptopRegular className='w-6 h-6 fill-neutral-700 dark:fill-neutral-100' />
+                      <>
+                        <LaptopRegular className='w-6 h-6 fill-neutral-500 dark:fill-neutral-100' />
+                        <span className='lg:block hidden text-neutral-600 dark:text-neutral-100'>
+                          Projects
+                        </span>
+                      </>
                     )}
                   </Link>
                   <Link
                     href='/contact'
-                    className={`w-full p-4 flex justify-center items-center transition-all duration-300 ease-out ${
+                    className={`w-full p-4 flex justify-center items-center gap-4 transition-all duration-300 ease-out ${
                       path === '/contact'
                         ? 'border-b-2 md:border-b-0 md:border-l-2 border-primary-700 dark:border-primary-400'
                         : 'border-b-0'
@@ -185,9 +215,19 @@ const Header = () => {
                     scroll={false}
                   >
                     {path === '/contact' ? (
-                      <LetterFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
+                      <>
+                        <LetterFill className='w-6 h-6 fill-primary-700 dark:fill-primary-400' />
+                        <span className='lg:block hidden text-primary-700 dark:text-primary-400 font-semibold'>
+                          Contact
+                        </span>
+                      </>
                     ) : (
-                      <LetterRegular className='w-66 h-6 fill-neutral-700 dark:fill-neutral-100' />
+                      <>
+                        <LetterRegular className='w-66 h-6 fill-neutral-500 dark:fill-neutral-100' />
+                        <span className='lg:block hidden text-neutral-600 dark:text-neutral-100'>
+                          Contact
+                        </span>
+                      </>
                     )}
                   </Link>
                 </nav>

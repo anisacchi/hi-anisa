@@ -35,7 +35,7 @@ export default function About() {
                   Skills
                 </h1>
               </div>
-              <Skill />
+              {/* <Skill /> */}
             </div>
           </div>
         </div>
