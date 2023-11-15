@@ -1,14 +1,15 @@
-import { Footer, Header } from '@/components';
+import { Header, Navbar } from '@/components';
+import React from 'react';
 
 const layout = ({ children }) => {
   return (
-    <div className='flex flex-col md:flex-row md:w-screen h-screen min-h-screen'>
-      <Header />
-      <div className='flex flex-col md:h-screen md:justify-between w-full overflow-x-auto'>
-        <main className='padding w-full basis-full'>{children}</main>
-        <Footer />
+    <>
+      <div className='md:hidden'>
+        <Header />
       </div>
-    </div>
+      <Navbar />
+      <main className='mb-[70px] md:mb-0 md:ml-20 lg:ml-60'>{children}</main>
+    </>
   );
 };
 

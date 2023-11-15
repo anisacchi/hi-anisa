@@ -1,7 +1,8 @@
-import skills from './skills';
+import skillsData from './skills';
 import educationsData from './educations';
-import experiences from './experiences';
-import certificates from './certificates';
+import experiencesData from './experiences';
+import certificatesData from './certificates';
 import projects from './projects';
+import navigation from './navigation';
 
-export { skills, educationsData, experiences, certificates, projects };
+export { skillsData, educationsData, experiencesData, certificatesData, projects, navigation };

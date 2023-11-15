@@ -3,14 +3,16 @@
 import React, { createContext, useEffect, useState } from 'react';
 
 const ThemeContext = createContext({
-  isDarkTheme: false,
+  isDark: false,
   toggleThemeHandler: () => {},
 });
 
 export const ThemeContextProvider = ({ children }) => {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
-  useEffect(() => initialThemeHandler());
+  useEffect(() => {
+    initialThemeHandler();
+  });
 
   const getThemeInLocalStorage = () => {
     return localStorage.getItem('theme');
@@ -18,30 +20,30 @@ export const ThemeContextProvider = ({ children }) => {
 
   const initialThemeHandler = () => {
     if (getThemeInLocalStorage() === 'dark') {
-      setIsDarkTheme(true);
+      setIsDark(true);
       document.documentElement.classList.add('dark');
     } else {
-      setIsDarkTheme(false);
+      setIsDark(false);
       localStorage.setItem('theme', 'light');
       document.documentElement.classList.remove('dark');
     }
   };
 
   const toggleThemeHandler = () => {
-    if (isDarkTheme) {
+    if (isDark) {
       localStorage.setItem('theme', 'light');
       document.documentElement.classList.remove('dark');
     } else {
       localStorage.setItem('theme', 'dark');
       document.documentElement.classList.add('dark');
     }
-    setIsDarkTheme(!isDarkTheme);
+    setIsDark(!isDark);
   };
 
   return (
     <ThemeContext.Provider
       value={{
-        isDarkTheme: isDarkTheme,
+        isDark: isDark,
         toggleThemeHandler: toggleThemeHandler,
       }}
     >

@@ -1,10 +1,11 @@
 import { Footer, Header } from '@/components';
+import React from 'react';
 
 const layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main className='padding md:padding-x md:py-8'>{children}</main>
+      <main className='basis-full w-full flex'>{children}</main>
       <Footer />
     </>
   );

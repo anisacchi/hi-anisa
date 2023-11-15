@@ -1,32 +1,42 @@
-import Header from './Header';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import Logo from './Logo';
-import Transition from './Transition';
-import TypeWriterEffect from './TypeWriterEffect';
-import CardProfile from './CardProfile';
-import Skill from './Skill';
-import Educations from './Educations';
-import Experiences from './Experiences';
-import Certificates from './Certificates';
-import ButtonTop from './ButtonTop';
-import { WebsiteCard, DesignCard } from './ProjectCard';
-import Button from './Button/Button';
+import Header from './common/Header';
+import Footer from './common/Footer';
+import Logo from './common/Logo';
+import ToggleTheme from './common/ToggleTheme';
+import Button from './common/Button';
+import Navbar from './common/Navbar';
+import Transition from './common/Transition';
+
+import Greeting from './home/Greeting';
+
+import Profile from './about/Profile';
+import AboutMe from './about/AboutMe';
+
+import Tabs from './projects/Tabs';
+import ProjectsList from './projects/ProjectList';
+import { WebsiteCard, DesignCard } from './projects/Card';
+import Modal from './projects/Modal';
+import Pagination from './projects/Pagination';
+
+import Socials from './contact/Socials';
+import Message from './contact/Message';
 
 export {
-	Header,
-  Navbar,
+  Header,
   Footer,
   Logo,
+  ToggleTheme,
+  Button,
+  Navbar,
   Transition,
-  TypeWriterEffect,
-  CardProfile,
-  Skill,
-  Educations,
-  Experiences,
-  Certificates,
-  ButtonTop,
+  Greeting,
+  Profile,
+  AboutMe,
+  Tabs,
+  ProjectsList,
   WebsiteCard,
   DesignCard,
-  Button,
+  Modal,
+  Pagination,
+  Socials,
+  Message,
 };

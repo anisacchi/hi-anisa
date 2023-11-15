@@ -6,56 +6,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-	font-family: var(--font-nunito);
+  font-family: var(--font-nunito);
 }
 
 html,
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
-body {
-  color: theme('colors.neutral.800');
-  background: theme('colors.neutral.100');
-}
-
-::-webkit-scrollbar {
-  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
   background: none;
 }
 
-::-webkit-scrollbar-thumb {
-  background: theme('colors.primary.300 / 80%');
-  border-radius: 4px;
-}
+@media only screen and (min-width: 1024px) {
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+	
+  ::-webkit-scrollbar-thumb {
+    background: theme('colors.primary.300 / 80%');
+    border-radius: 4px;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  background: theme('colors.primary.300');
+  ::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.primary.300');
+  }
 }
 
 @layer utilities {
   .padding {
-    @apply sm:px-8 px-4 lg:py-6 py-4;
+    @apply px-4 sm:px-8 py-4 lg:py-6;
   }
 
   .padding-y {
-    @apply lg:py-6 py-4;
+    @apply py-4 lg:py-6;
   }
 
   .padding-x {
-    @apply sm:px-8 px-4;
+    @apply px-4 sm:px-8;
   }
 
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
 
-  /* Hide scrollbar for IE, Edge and Firefox */
+  /* Hide scrollbar for IE, Edge, and Firefox*/
   .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */

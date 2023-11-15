@@ -1,4 +1,4 @@
-const certificates = [
+const certificatesData = [
   {
     name: 'AWS Academy Cloud Foundations',
     organization: 'Amazon Web Services (AWS)',
@@ -44,4 +44,4 @@ const certificates = [
   },
 ];
 
-export default certificates;
+export default certificatesData;

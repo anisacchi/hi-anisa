@@ -11,41 +11,26 @@ module.exports = {
     colors: {
       primary: {
         100: '#FFF3ED',
-        200: '#FFE4DB',
-        300: '#FFD3C9',
-        400: '#FFC2BC',
-        500: '#FFA7A6',
-        600: '#DB7980',
-        700: '#B75363',
-        800: '#93344C',
-        900: '#7A1F3D',
+        200: '#FFD3C9',
+        300: '#FFA7A6',
+        400: '#B75363',
+        500: '#7A1F3D',
       },
       neutral: {
         100: '#FDFDFD',
-        200: '#ECECEC',
-        300: '#A8A8A8',
-        400: '#808080',
-        500: '#676767',
-        600: '#414141',
-        700: '#3B3B3B',
-        800: '#2E2E2E',
-        900: '#242424',
+        200: '#A8A8A8',
+        300: '#676767',
+        400: '#3B3B3B',
+        500: '#242424',
       },
-      success: '#ACE67E',
-      warning: '#F4EB45',
-      info: '#93BAFF',
-      danger: '#FFAEA5',
     },
     extend: {
       fontFamily: {
         nunito: ['--var(--font-nunito)'],
       },
-      boxShadow: {
-        primary: '0px 8px 28px 0px rgba(183, 83, 99, 0.20)',
-        neutral: '0px 8px 28px 0px rgba(59, 59, 59, 0.20)',
-      },
       animation: {
         wiggle: 'wiggle 3s infinite',
+        'spin-slow': 'spin 3s infinite',
       },
       keyframes: {
         wiggle: {
