@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Tabs = ({ tabSelected, setTabSelected }) => {
-  const menus = ['All', 'Website', 'Design'];
+  const menus = ['All', 'Website', 'Native', 'Design'];
 
   return (
     <div className='flex flex-row gap-4'>

@@ -17,6 +17,18 @@ const projects = [
     link_github: 'https://github.com/anisacchi/hi-anisa',
   },
   {
+    name: 'HomeLibrary',
+    description: 'This is a reading tracker application project.',
+    category: 'Native',
+    techs: ['React Native'],
+    cover_image: '/projects/hianisa.webp',
+    images: [],
+    link_demo: '',
+    link_notion: '',
+    link_figma: '',
+    link_github: '',
+  },
+  {
     name: 'Curriculum Book Cover',
     description:
       'This book cover design is used for the cover of the 2022 Kotalama 4 Malang Elementary School curriculum.',

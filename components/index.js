@@ -13,7 +13,7 @@ import AboutMe from './about/AboutMe';
 
 import Tabs from './projects/Tabs';
 import ProjectsList from './projects/ProjectList';
-import { WebsiteCard, DesignCard } from './projects/Card';
+import { WebsiteCard, OthersCard } from './projects/Card';
 import Modal from './projects/Modal';
 import Pagination from './projects/Pagination';
 
@@ -34,7 +34,7 @@ export {
   Tabs,
   ProjectsList,
   WebsiteCard,
-  DesignCard,
+  OthersCard,
   Modal,
   Pagination,
   Socials,

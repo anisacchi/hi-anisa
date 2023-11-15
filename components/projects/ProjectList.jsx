@@ -1,5 +1,5 @@
 import React from 'react';
-import { DesignCard, WebsiteCard } from '@/components';
+import { OthersCard, WebsiteCard } from '@/components';
 
 const ProjectList = ({ projects }) => {
   return (
@@ -8,7 +8,7 @@ const ProjectList = ({ projects }) => {
         return project.category === 'Website' ? (
           <WebsiteCard key={`website-${index}`} project={project} />
         ) : (
-          <DesignCard key={`design-${index}`} project={project} />
+          <OthersCard key={`design-${index}`} project={project} />
         );
       })}
     </div>

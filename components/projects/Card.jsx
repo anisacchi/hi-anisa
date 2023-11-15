@@ -1,6 +1,6 @@
 'use client';
 
-import { Close, Figma, Github, Globe, Notion } from '@/assets/icons';
+import { Figma, Github, Globe, Notion } from '@/assets/icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -63,7 +63,7 @@ const WebsiteCard = ({ project }) => {
   );
 };
 
-const DesignCard = ({ project }) => {
+const OthersCard = ({ project }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [projectOpen, setProjectOpen] = useState(null);
 
@@ -109,4 +109,4 @@ const DesignCard = ({ project }) => {
   );
 };
 
-export { WebsiteCard, DesignCard };
+export { WebsiteCard, OthersCard };
