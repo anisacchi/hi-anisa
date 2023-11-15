@@ -38,6 +38,9 @@ module.exports = {
           '50%': { transform: 'rotate(10deg)' },
         },
       },
+      backgroundImage: {
+        'bg-header': "url('/header.png')",
+      },
     },
   },
   plugins: [],

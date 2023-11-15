@@ -10,7 +10,9 @@ import { Button } from '@/components';
 const Profile = () => {
   return (
     <div>
-      <div className='absolute -z-20 right-0 left-0 top-0 h-32 bg-primary-300/20' />
+      <div
+        className='absolute -z-20 right-0 left-0 top-0 h-32 bg-repeat bg-contain bg-bg-header'
+      />
       <div className='flex items-end justify-between'>
         <div className='w-28 md:w-32 md:mt-10 lg:w-40'>
           <Image
