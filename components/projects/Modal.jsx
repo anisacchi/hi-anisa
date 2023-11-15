@@ -10,7 +10,7 @@ const Modal = ({ projectImages, setIsModalOpen }) => {
   };
 
   return (
-    <div className='fixed flex flex-col items-center p-4 z-50 top-0 bottom-0 right-0 left-0 overflow-scroll no-scrollbar bg-neutral-500/80'>
+    <div className='fixed flex flex-col items-center p-4 z-50 top-0 bottom-0 right-0 left-0 overflow-scroll no-scrollbar bg-neutral-500/80 gap-8'>
       <Button
         type='button'
         intent='primary'
