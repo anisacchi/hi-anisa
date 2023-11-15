@@ -12,7 +12,7 @@ const Socials = () => {
         alt='Hero'
         width={1500}
         height={1198}
-        className='w-full max-w-[360px] h-auto mb-4 hidden md:block'
+        className='w-full max-w-[360px] h-auto mb-4'
         priority
       />
       <div className='flex flex-row gap-2 justify-center items-center'>
