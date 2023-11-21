@@ -33,7 +33,7 @@ const Profile = () => {
             </Button>
           </Link>
           <Link
-            href='https://drive.google.com/file/d/1EFCp9Tw9p_pdQ-iBuy_cdD8RiT50hxNq/view?usp=sharing'
+            href='https://drive.google.com/file/d/1awsIRFQNMBYHBCH2WKZZMvSB1ZJB4xfa/view?usp=sharing'
             target='_blank'
             className='md:mb-0 lg:mb-8'
           >
@@ -85,7 +85,7 @@ const Profile = () => {
           </Button>
         </Link>
         <Link
-          href='https://drive.google.com/file/d/1EFCp9Tw9p_pdQ-iBuy_cdD8RiT50hxNq/view?usp=sharing'
+          href='https://drive.google.com/file/d/1awsIRFQNMBYHBCH2WKZZMvSB1ZJB4xfa/view?usp=sharing'
           target='_blank'
           className='w-full'
         >
