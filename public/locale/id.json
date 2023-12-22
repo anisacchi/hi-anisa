@@ -1,0 +1,24 @@
+{
+  "home": {
+    "nextButtonText": "Lanjut",
+    "greeting": {
+      "hi": "Hai<mark>!</mark>",
+      "name": "Saya <name>Anisa</name> Permatasari<point>.</point>",
+      "intro1": "Seorang",
+      "intro2": "yang juga suka <highlight>mendesain</highlight>. Saya mencintai apa yang saya lakukan <heart>❤</heart>"
+    }
+  },
+	"about" : {
+		"contactButtonText": "Kontak",
+		"place": "Malang, Jawa Timur, Indonesia",
+		"bio": "Hola 🚀 Saya adalah seorang React/Front-End Developer yang bersemangat dan saya senang mempelajari sesuatu, khususnya tentang IT, dimana saya terus mencari peluang untuk memperluas pengetahuan saya. Di luar baris-baris kode, saya juga memiliki sisi kreatif yang saya luapkan dengan mendesain grafis dan menggambar. Mari satukan keterampilan kita dan ciptakan sesuatu yang luar biasa bersama-sama! ✨"
+	},
+	"projects": {
+		"title": "Proyek",
+		"subtitle": "Proyek yang saya kerjakan"
+	},
+  "footer": {
+    "text1": "Dibuat dengan",
+    "text2": "oleh"
+  }
+}

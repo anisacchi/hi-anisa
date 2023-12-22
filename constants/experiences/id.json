@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Engineering on Site Configuration PPDB Online",
+    "company_name": "PT. Jalin Mayantara Indonesia",
+    "icon": "/assets/company/jmi.webp",
+    "icon_bg": "#121212",
+    "date": "May 2023 - Jul 2023",
+    "job_desc": [
+      "Berkontribusi dalam proses konfigurasi untuk memastikan kelancaran fungsi sistem PPDB online",
+      "Dengan teliti memperbarui dan memverifikasi data dalam sistem, menjamin akurasi dan itegritas data",
+      "Melakukan User Acceptance Testing (UAT), memastikan kelancaran fungsi sistem dan memverifikasi akurasi data yang ditampilkan untuk pengguna"
+    ]
+  },
+	{
+    "title": "Guru Komputer dan Bahasa Inggris",
+    "company_name": "SDN Kotalama 4 Malang",
+    "icon": "/assets/company/kotalama4.webp",
+    "icon_bg": "#fff",
+    "date": "Mar 2022 - Dec 2022",
+    "job_desc": [
+      "Mengajar kelas komputer dan bahasa Inggris untuk siswa sekolah dasar, menggunakan teknik inovatif dan mengintegrasikan teknologi untuk meningkatkan keterlibatan siswa",
+			"Menerapkan metode pembelajaran interaktif dan menyenangkan, menciptakan lingkungan yang mendukung pembelajaran dan eksplorasi minat",
+      "Bertanggung jawab atas pengelolaan dan pemeliharaan lab komputer, memastikan ketersediaan sumber daya yang optimal untuk pembelajaran yang efektif"
+    ]
+  }
+]

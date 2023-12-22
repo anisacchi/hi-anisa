@@ -1,0 +1,67 @@
+[
+  {
+    "name": "HTML",
+    "icon": "/assets/skills/html.svg",
+		"category": "Web Developer"
+  },
+  {
+    "name": "CSS",
+    "icon": "/assets/skills/css.svg",
+		"category": "Web Developer"
+  },
+  {
+    "name": "Javascript",
+    "icon": "/assets/skills/javascript.svg",
+		"category": "Web Developer"
+  },
+	{
+		"name": "React",
+		"icon": "/assets/skills/react.svg",
+		"category": "Web Developer"
+	},
+	{
+		"name": "Tailwind",
+		"icon": "/assets/skills/tailwind.svg",
+		"category": "Web Developer"
+	},
+	{
+		"name": "Next.js",
+		"icon": "/assets/skills/nextjs.svg",
+		"category": "Web Developer"
+	},
+	{
+		"name": "Framer Motion",
+		"icon": "/assets/skills/motion.svg",
+		"category": "Web Developer"
+	},
+	{
+		"name": "Postgresql",
+		"icon": "/assets/skills/postgresql.svg",
+		"category": "Web Developer"
+	},
+	{
+		"name": "Git",
+		"icon": "/assets/skills/git.svg",
+		"category": "Web Developer"
+	},
+	{
+		"name": "Figma",
+		"icon": "/assets/skills/figma.svg",
+		"category": "Web Developer"
+	},
+	{
+		"name": "Adobe Photoshop",
+		"icon": "/assets/skills/ps.svg",
+		"category": "Graphic Designer"
+	},
+	{
+		"name": "Adobe Illustration",
+		"icon": "/assets/skills/ai.svg",
+		"category": "Graphic Designer"
+	},
+	{
+		"name": "Blender",
+		"icon": "/assets/skills/blender.svg",
+		"category": "Graphic Designer"
+	}
+]

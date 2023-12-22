@@ -1,0 +1,11 @@
+[
+  {
+		"id": "s1",
+    "degree": "Sarjana Teknik Informatika",
+    "place": "Universitas Brawijaya",
+    "year": "2015 - 2022",
+    "gpa_text": "IPK",
+		"gpa_number": 3.67,
+		"icon": "/assets/company/ub.webp"
+  }
+]

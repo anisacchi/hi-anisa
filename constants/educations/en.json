@@ -1,0 +1,11 @@
+[
+  {
+    "id": "s1",
+    "degree": "Bachelor of Informatics Engineering",
+    "place": "Brawijaya University",
+    "year": "2015 - 2022",
+    "gpa_text": "Grade",
+    "gpa_number": 3.67,
+    "icon": "/assets/company/ub.webp"
+  }
+]

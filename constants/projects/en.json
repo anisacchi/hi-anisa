@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Anisa Portfolio",
+    "description": "This is my personal portfolio website designed to introduce myself and showcase my best work.",
+    "category": "Website",
+    "techs": ["Next.js", "Tailwind", "Framer Motion"],
+    "cover_image": "/assets/projects/hianisa.webp",
+    "images": [],
+    "link_demo": "https://hi-anisa.netlify.app",
+    "link_notion": "https://www.notion.so/anisacchi/Hi-Anisa-Portfolio-Website-2aaac78155a94ce2bb7cf90726339c61?pvs=4",
+    "link_figma": "https://www.figma.com/file/sRCpaiPTOwpPzz4kAf9Pgr/hi-anisa-(portfolio-website)?type=design&node-id=0%3A1&mode=design&t=19CtYV5j9uhuBH1J-1",
+    "link_github": "https://github.com/anisacchi/hi-anisa"
+  },
+  {
+    "name": "HomeLibrary",
+    "description": "This is a reading tracker application project.",
+    "category": "Native",
+    "techs": ["React Native", "Expo", "Async-Storage"],
+    "cover_image": "/assets/projects/hl-1.webp",
+    "images": [
+      "/assets/projects/hl-1.webp",
+      "/assets/projects/hl-2.webp",
+      "/assets/projects/hl-3.webp",
+      "/assets/projects/hl-4.webp",
+      "/assets/projects/hl-5.webp",
+      "/assets/projects/hl-6.webp",
+      "/assets/projects/hl-7.webp",
+      "/assets/projects/hl-8.webp",
+      "/assets/projects/hl-9.webp",
+      "/assets/projects/hl-10.webp",
+      "/assets/projects/hl-11.webp",
+      "/assets/projects/hl-12.webp"
+    ],
+    "link_demo": "",
+    "link_notion": "",
+    "link_figma": "",
+    "link_github": ""
+  },
+  {
+    "name": "Curriculum Book Cover",
+    "description": "This design is used as the book cover for 2022 curriculum at SDN Kotalama 4 Malang (an elementary school in Malang).",
+    "category": "Design",
+    "techs": ["Photoshop"],
+    "cover_image": "/assets/projects/ktsp-1.webp",
+    "images": [
+      "/assets/projects/ktsp-1.webp",
+      "/assets/projects/ktsp-2.webp",
+      "/assets/projects/ktsp-3.webp",
+      "/assets/projects/ktsp-4.webp"
+    ],
+    "link_demo": "",
+    "link_notion": "",
+    "link_figma": "",
+    "link_github": ""
+  },
+  {
+    "name": "Independent Curriculum Book Cover",
+    "description": "This design is used as the book cover for 2022 independent curriculum at SDN Kotalama 4 Malang (an elementary school in Malang).",
+    "category": "Design",
+    "techs": ["Photoshop"],
+    "cover_image": "/assets/projects/kosp-1.webp",
+    "images": [
+      "/assets/projects/kosp-1.webp",
+      "/assets/projects/kosp-2.webp",
+      "/assets/projects/kosp-3.webp",
+      "/assets/projects/kosp-4.webp"
+    ],
+    "link_demo": "",
+    "link_notion": "",
+    "link_figma": "",
+    "link_github": ""
+  },
+  {
+    "name": "PPDB Poster",
+    "description": "The PPDB poster for SDN Kotalama 4 Malang is designed to convey crucial information about the selection process, PPDB process timeline, and registration requirements. The design aims to attract attention and ensure clarity for prospective students and parents.",
+    "category": "Design",
+    "techs": ["Photoshop"],
+    "cover_image": "/assets/projects/posterppdb-1.webp",
+    "images": [
+      "/assets/projects/posterppdb-1.webp",
+      "/assets/projects/posterppdb-2.webp",
+      "/assets/projects/posterppdb-3.webp",
+      "/assets/projects/posterppdb-4.webp"
+    ],
+    "link_demo": "",
+    "link_notion": "",
+    "link_figma": "",
+    "link_github": ""
+  }
+]

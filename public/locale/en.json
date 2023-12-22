@@ -1,0 +1,24 @@
+{
+  "home": {
+    "nextButtonText": "Next",
+    "greeting": {
+      "hi": "Hi<mark>!</mark>",
+      "name": "I'm <name>Anisa</name> Permatasari<point>.</point>",
+      "intro1": "A passionate",
+      "intro2": "who also enjoys <highlight>designing</highlight> and I love what I do <heart>❤</heart>"
+    }
+  },
+	"about" : {
+		"contactButtonText": "Contact",
+		"place": "Malang, East Java, Indonesia",
+		"bio": "Hola 🚀 I'm a passionate React/Front-End Developer and I have a deep love for learning, expecially about IT, where I'm constantly looking for opportunities to expand my knowledge. Beyond the lines of code, I also have a creative side that I indulge in by designing graphics and drawing. Let's unite our skills and conjure something extraordinary together! ✨"
+	},
+	"projects": {
+		"title": "Projects",
+		"subtitle": "Projects I have worked on"
+	},
+  "footer": {
+    "text1": "Created with",
+    "text2": "by"
+  }
+}

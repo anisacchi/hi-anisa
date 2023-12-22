@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Anisa Portfolio",
+    "description": "Ini adalah situs portofolio pribadi saya yang dirancang untuk memperkenalkan diri dan memamerkan karya terbaik saya.",
+    "category": "Website",
+    "techs": ["Next.js", "Tailwind", "Framer Motion"],
+    "cover_image": "/assets/projects/hianisa.webp",
+    "images": [],
+    "link_demo": "https://hi-anisa.netlify.app",
+    "link_notion": "https://www.notion.so/anisacchi/Hi-Anisa-Portfolio-Website-2aaac78155a94ce2bb7cf90726339c61?pvs=4",
+    "link_figma": "https://www.figma.com/file/sRCpaiPTOwpPzz4kAf9Pgr/hi-anisa-(portfolio-website)?type=design&node-id=0%3A1&mode=design&t=19CtYV5j9uhuBH1J-1",
+    "link_github": "https://github.com/anisacchi/hi-anisa"
+  },
+  {
+    "name": "HomeLibrary",
+    "description": "Ini adalah proyek aplikasi pelacak bacaan.",
+    "category": "Native",
+    "techs": ["React Native", "Expo", "Async-Storage"],
+    "cover_image": "/assets/projects/hl-1.webp",
+    "images": [
+      "/assets/projects/hl-1.webp",
+      "/assets/projects/hl-2.webp",
+      "/assets/projects/hl-3.webp",
+      "/assets/projects/hl-4.webp",
+      "/assets/projects/hl-5.webp",
+      "/assets/projects/hl-6.webp",
+      "/assets/projects/hl-7.webp",
+      "/assets/projects/hl-8.webp",
+      "/assets/projects/hl-9.webp",
+      "/assets/projects/hl-10.webp",
+      "/assets/projects/hl-11.webp",
+      "/assets/projects/hl-12.webp"
+    ],
+    "link_demo": "",
+    "link_notion": "",
+    "link_figma": "",
+    "link_github": ""
+  },
+  {
+    "name": "Curriculum Book Cover",
+    "description": "Desain ini digunakan untuk sampul buku kurikulum tahun 2022 di SDN Kotalama 4 Malang.",
+    "category": "Design",
+    "techs": ["Photoshop"],
+    "cover_image": "/assets/projects/ktsp-1.webp",
+    "images": [
+      "/assets/projects/ktsp-1.webp",
+      "/assets/projects/ktsp-2.webp",
+      "/assets/projects/ktsp-3.webp",
+      "/assets/projects/ktsp-4.webp"
+    ],
+    "link_demo": "",
+    "link_notion": "",
+    "link_figma": "",
+    "link_github": ""
+  },
+  {
+    "name": "Independent Curriculum Book Cover",
+    "description": "Desain ini digunakan untuk sampul buku kurikulum merdeka tahun 2022 di SDN Kotalama 4 Malang.",
+    "category": "Design",
+    "techs": ["Photoshop"],
+    "cover_image": "/assets/projects/kosp-1.webp",
+    "images": [
+      "/assets/projects/kosp-1.webp",
+      "/assets/projects/kosp-2.webp",
+      "/assets/projects/kosp-3.webp",
+      "/assets/projects/kosp-4.webp"
+    ],
+    "link_demo": "",
+    "link_notion": "",
+    "link_figma": "",
+    "link_github": ""
+  },
+  {
+    "name": "PPDB Poster",
+    "description": "Poster PPDB untuk SDN Kotalama 4 Malang untuk menyampaikan informasi penting tentang proses seleksi, timeline proses PPDB, dan syarat pendaftaran. Desain ini bertujuan untuk menarik perhatian dan memastikan kejelasan bagi calon siswa dan orang tua.",
+    "category": "Design",
+    "techs": ["Photoshop"],
+    "cover_image": "/assets/projects/posterppdb-1.webp",
+    "images": [
+      "/assets/projects/posterppdb-1.webp",
+      "/assets/projects/posterppdb-2.webp",
+      "/assets/projects/posterppdb-3.webp",
+      "/assets/projects/posterppdb-4.webp"
+    ],
+    "link_demo": "",
+    "link_notion": "",
+    "link_figma": "",
+    "link_github": ""
+  }
+]
