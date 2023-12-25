@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import animate from '@/lib/animate';
+import { animate } from '@/lib/animate';
 
 type SkillCardProps = {
   index: number;

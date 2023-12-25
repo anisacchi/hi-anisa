@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import Image from 'next/image';
-import animate from '@/lib/animate';
+import { animate } from '@/lib/animate';
 
 type ExperienceCardProps = {
   index: number;

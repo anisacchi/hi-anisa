@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import animateInfo from '@/lib/animate';
+import { animate } from '@/lib/animate';
 
 type ContentInfoProps = {
   id: string;
@@ -26,23 +26,23 @@ const ContentInfo = ({ id, title, subtitle, content }: ContentInfoProps) => {
     <div className='flex flex-col gap-4'>
       <motion.div
         ref={ref}
-        variants={animateInfo}
+        variants={animate}
         initial='hidden'
         animate='show'
         className='flex flex-col overflow-y-hidden'
       >
         <motion.span
           key={`sub-${id}`}
-          initial={animateInfo.hidden}
-					animate={animateInfo.show(0)}
+          initial={animate.hidden}
+          animate={animate.show(0)}
           className='inline-block text-xs lg:text-sm text-primary-400 dark:text-primary-200'
         >
           {subtitle}
         </motion.span>
         <motion.span
           key={`title-${id}`}
-          initial={animateInfo.hidden}
-					animate={animateInfo.show(1)}
+          initial={animate.hidden}
+          animate={animate.show(1)}
           className='inline-block text-xl md:text-2xl font-bold tracking-wide text-primary-500 dark:text-primary-100'
         >
           {title}

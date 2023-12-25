@@ -3,5 +3,6 @@ import Categories from './Categories';
 import Contents from './Contents';
 import Pagination from './Pagination';
 import ProjectCard from './ProjectCard';
+import Modal from './Modal';
 
-export { ProjectCards, Categories, Contents, Pagination, ProjectCard }
+export { ProjectCards, Categories, Contents, Pagination, ProjectCard, Modal }

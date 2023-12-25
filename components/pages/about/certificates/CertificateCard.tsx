@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 import { motion, useAnimation, useInView } from 'framer-motion';
-import animate from '@/lib/animate';
+import { animate } from '@/lib/animate';
 import Link from 'next/link';
 import { Button } from '@/components/ui';
 import { ArrowOut } from '@/assets/icons';
@@ -50,7 +50,7 @@ const CertificateCard = ({
           width={400}
           height={400}
           alt={`Logo of ${organization}`}
-					className='w-8 h-8'
+          className='w-8 h-8'
         />
 
         <div className='flex flex-col'>

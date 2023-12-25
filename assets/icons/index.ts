@@ -5,6 +5,7 @@ import CaretLeft from './CaretLeft';
 import CaretRight from './CaretRight';
 import CaretDown from './CaretDown';
 import Certificate from './Certificate';
+import Close from './Close';
 import Envelope from './Envelope';
 import EnvelopeFill from './EnvelopeFill';
 import Figma from './Figma';
@@ -26,4 +27,4 @@ import UserFill from './UserFill';
 import Whatsapp from './Whatsapp';
 import X from './X';
 
-export { ArrowOut, ArrowRight, Briefcase, CaretLeft, CaretRight, CaretDown, Certificate, Envelope, EnvelopeFill, Figma, Github, GraduationCap, House, Instagram, Key, Laptop, LaptopFill, Linkedin, MapPin, Moon, Notion, Sparkle, Sun, User, UserFill, Whatsapp, X }
+export { ArrowOut, ArrowRight, Briefcase, CaretLeft, CaretRight, CaretDown, Certificate, Close, Envelope, EnvelopeFill, Figma, Github, GraduationCap, House, Instagram, Key, Laptop, LaptopFill, Linkedin, MapPin, Moon, Notion, Sparkle, Sun, User, UserFill, Whatsapp, X }
